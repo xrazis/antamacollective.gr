@@ -1,0 +1,33 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Αρχική"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Δημοσιεύσεις"
+url = "blog/"
+weight = 2
+
+[[main]]
+name = "Επικοινωνία"
+url = "contact/"
+weight = 3
+
+# footer menu
+[[footer]]
+name = "Αρχική"
+url = "home/"
+weight = 1
+
+[[footer]]
+name = "Δημοσιεύσεις"
+url = "blog/"
+weight = 2
+
+[[footer]]
+name = "Επικοινωνία"
+url = "contact/"
+weight = 3

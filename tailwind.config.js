@@ -48,7 +48,7 @@ if (theme.fonts.font_family.secondary) {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./hugo_stats_decoded.json"],
-  safelist: [{ pattern: /^swiper-/ }],
+  safelist: [{pattern: /^swiper-/}],
   darkMode: "class",
   theme: {
     screens: {

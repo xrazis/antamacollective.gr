@@ -173,6 +173,7 @@ function initialize() {
     title: mapMarkerName,
   });
 }
+
 var map = document.getElementById("map");
 if (map != null) {
   google.maps.event.addDomListener(window, "load", initialize);

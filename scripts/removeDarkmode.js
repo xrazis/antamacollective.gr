@@ -44,7 +44,7 @@ function removeDarkModeFromPages(directoryPath) {
 }
 
 function removeDarkMode(configFile) {
-  const { filePath, patterns } = configFile;
+  const {filePath, patterns} = configFile;
   if (filePath === "exampleSite/tailwind.config.js") {
     removeDarkModeFromFiles(filePath, patterns);
   } else {

@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const toggleComment = ({ filepath, regex }) => {
+const toggleComment = ({filepath, regex}) => {
   let updatedContent = fs.readFileSync(filepath, "utf8");
   const match = updatedContent.match(regex);
 
@@ -41,19 +41,19 @@ const getFolderName = (rootfolder) => {
 
 const deleteFolder = (folderPath) => {
   if (fs.existsSync(folderPath)) {
-    fs.rmSync(folderPath, { recursive: true, force: true });
+    fs.rmSync(folderPath, {recursive: true, force: true});
   }
 };
 
 const createNewfolder = (rootfolder, folderName) => {
   const newFolder = path.join(rootfolder, folderName);
-  fs.mkdirSync(newFolder, { recursive: true });
+  fs.mkdirSync(newFolder, {recursive: true});
   return newFolder;
 };
 
-const iterateFilesAndFolders = (rootFolder, { destinationRoot }) => {
+const iterateFilesAndFolders = (rootFolder, {destinationRoot}) => {
   const directory = path.join(rootFolder);
-  const items = fs.readdirSync(directory, { withFileTypes: true });
+  const items = fs.readdirSync(directory, {withFileTypes: true});
   items.forEach((item) => {
     if (item.isDirectory()) {
       createNewfolder(destinationRoot, item.name);
@@ -98,7 +98,7 @@ const setupProject = () => {
       const source = path.join(rootfolder, folder);
       const destination = path.join(newfolderName, folder);
       if (fs.existsSync(source)) {
-        fs.mkdirSync(destination, { recursive: true });
+        fs.mkdirSync(destination, {recursive: true});
         iterateFilesAndFolders(source, {
           currentFolder: folder,
           destinationRoot: destination,
@@ -108,7 +108,7 @@ const setupProject = () => {
     });
 
     const exampleSite = path.join(rootfolder, "exampleSite");
-    iterateFilesAndFolders(exampleSite, { destinationRoot: rootfolder });
+    iterateFilesAndFolders(exampleSite, {destinationRoot: rootfolder});
     deleteFolder(exampleSite);
   }
 };
