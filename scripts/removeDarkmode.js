@@ -1,14 +1,14 @@
 const fs = require("fs");
 const path = require("path");
 
-const rootDirs = ["assets/scss", "layouts"];
+const rootDirs = ["assets/scss", "themes/hugoplate/assets/scss"];
 const configFiles = [
   {
-    filePath: "exampleSite/tailwind.config.js",
+    filePath: "tailwind.config.js",
     patterns: ["darkmode:\\s*{[^}]*},", 'darkMode:\\s*"class",'],
   },
   {
-    filePath: "exampleSite/data/theme.json",
+    filePath: "data/theme.json",
     patterns: ["colors.darkmode"],
   },
 ];
@@ -17,8 +17,7 @@ rootDirs.forEach(removeDarkModeFromPages);
 configFiles.forEach(removeDarkMode);
 
 function removeDarkModeFromFiles(filePath, regexPatterns) {
-  const fileContent = fs.readFileSync(filePath, "utf8");
-  let updatedContent = fileContent;
+  let updatedContent = fs.readFileSync(filePath, "utf8");
   regexPatterns.forEach((pattern) => {
     const regex = new RegExp(pattern, "g");
     updatedContent = updatedContent.replace(regex, "");
@@ -44,8 +43,8 @@ function removeDarkModeFromPages(directoryPath) {
 }
 
 function removeDarkMode(configFile) {
-  const {filePath, patterns} = configFile;
-  if (filePath === "exampleSite/tailwind.config.js") {
+  const { filePath, patterns } = configFile;
+  if (filePath === "tailwind.config.js") {
     removeDarkModeFromFiles(filePath, patterns);
   } else {
     const contentFile = JSON.parse(fs.readFileSync(filePath, "utf8"));

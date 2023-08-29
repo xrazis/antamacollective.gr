@@ -5,14 +5,14 @@
   html {
     @apply text-base; }
   body {
-    @apply bg-body font-primary text-text dark:bg-darkmode-body dark:text-darkmode-text font-normal leading-relaxed; }
+    @apply bg-body font-primary text-text   font-normal leading-relaxed; }
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @apply font-secondary text-dark dark:text-darkmode-dark font-bold leading-tight; }
+    @apply font-secondary text-dark  font-bold leading-tight; }
   h1,
   .h1 {
     @apply text-h1-sm md:text-h1; }
@@ -49,21 +49,21 @@
   .container {
     @apply mx-auto px-4 2xl:max-w-[1320px]; }
   .form-input {
-    @apply bg-theme-light text-dark placeholder:text-light focus:border-primary dark:border-darkmode-border dark:bg-darkmode-theme-light dark:text-darkmode-light w-full rounded border-transparent px-6 py-4 focus:ring-transparent; }
+    @apply bg-theme-light text-dark placeholder:text-light focus:border-primary    w-full rounded border-transparent px-6 py-4 focus:ring-transparent; }
   .form-label {
-    @apply font-secondary text-dark dark:text-darkmode-light mb-4 block text-xl font-normal; }
+    @apply font-secondary text-dark  mb-4 block text-xl font-normal; }
   .social-icons {
     @apply space-x-4; }
     .social-icons li {
       @apply inline-block; }
       .social-icons li a {
-        @apply bg-primary dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white; }
+        @apply bg-primary   flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white; }
         .social-icons li a svg {
           @apply h-5 w-5; }
   .swiper-pagination-bullet {
-    @apply bg-theme-light dark:bg-darkmode-theme-light h-2.5 w-2.5 opacity-100; }
+    @apply bg-theme-light  h-2.5 w-2.5 opacity-100; }
     .swiper-pagination-bullet-active {
-      @apply bg-primary dark:bg-darkmode-primary h-4 w-4; }
+      @apply bg-primary  h-4 w-4; }
   .content {
     @apply prose max-w-none;
     @apply prose-headings:mb-[.3em] prose-headings:mt-[.6em];
@@ -71,21 +71,21 @@
     @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
     @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
     @apply prose-img:max-w-full prose-img:rounded;
-    @apply prose-hr:border-border prose-hr:dark:border-darkmode-border;
-    @apply prose-p:text-base prose-p:text-text prose-p:dark:text-darkmode-text;
-    @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark prose-blockquote:dark:border-darkmode-primary prose-blockquote:dark:bg-darkmode-theme-light prose-blockquote:dark:text-darkmode-light;
-    @apply prose-pre:rounded-lg prose-pre:bg-theme-light prose-pre:dark:bg-darkmode-theme-light;
-    @apply prose-code:px-1 prose-code:text-primary prose-code:dark:text-darkmode-primary;
-    @apply prose-strong:text-dark prose-strong:dark:text-darkmode-text;
-    @apply prose-a:text-text prose-a:underline hover:prose-a:text-primary prose-a:dark:text-darkmode-text hover:prose-a:dark:text-darkmode-primary;
-    @apply prose-li:text-text prose-li:dark:text-darkmode-text;
-    @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""] prose-table:before:dark:border-darkmode-border;
-    @apply prose-thead:border-border prose-thead:bg-theme-light prose-thead:dark:border-darkmode-border prose-thead:dark:bg-darkmode-theme-light;
-    @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-dark prose-th:dark:text-darkmode-text;
-    @apply prose-tr:border-border prose-tr:dark:border-darkmode-border;
-    @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px] prose-td:dark:text-darkmode-text; }
+    @apply prose-hr:border-border;
+    @apply prose-p:text-base prose-p:text-text;
+    @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-dark;
+    @apply prose-pre:rounded-lg prose-pre:bg-theme-light;
+    @apply prose-code:px-1 prose-code:text-primary;
+    @apply prose-strong:text-dark;
+    @apply prose-a:text-text prose-a:underline hover:prose-a:text-primary;
+    @apply prose-li:text-text;
+    @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""];
+    @apply prose-thead:border-border prose-thead:bg-theme-light;
+    @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-dark;
+    @apply prose-tr:border-border;
+    @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px]; }
     .content .btn {
-      @apply dark:hover:text-dark no-underline hover:text-white !important; }
+      @apply no-underline hover:text-white !important; }
   input#nav-toggle:checked + label #show-button {
     @apply hidden; }
   input#nav-toggle:checked + label #hide-button {
@@ -93,25 +93,23 @@
   input#nav-toggle:checked ~ #nav-menu {
     @apply block; }
   .header {
-    @apply bg-body dark:bg-darkmode-body py-6; }
+    @apply bg-body  py-6; }
   .navbar {
     @apply relative flex flex-wrap items-center justify-between; }
   .navbar-brand {
-    @apply text-dark dark:text-darkmode-dark text-xl font-semibold; }
+    @apply text-dark  text-xl font-semibold; }
     .navbar-brand image {
       @apply max-h-full max-w-full; }
   .navbar-nav {
     @apply text-center lg:text-left; }
   .nav-link {
-    @apply text-dark hover:text-primary dark:text-darkmode-dark block p-3 font-semibold transition lg:px-2 lg:py-3; }
+    @apply text-dark hover:text-primary  block p-3 font-semibold transition lg:px-2 lg:py-3; }
   .nav-dropdown {
     @apply mr-0; }
-  .nav-dropdown-list {
-    @apply bg-body dark:bg-darkmode-body z-10 min-w-[180px] rounded p-4 shadow; }
   .nav-dropdown-item {
     @apply mb-2; }
   .nav-dropdown-link {
-    @apply text-dark hover:text-primary dark:text-darkmode-text dark:hover:text-darkmode-primary block py-1 font-semibold transition; }
+    @apply text-dark hover:text-primary   block py-1 font-semibold transition; }
   .theme-switcher {
     @apply inline-flex; }
     .theme-switcher label {
@@ -119,7 +117,7 @@
     .theme-switcher input {
       @apply absolute opacity-0; }
     .theme-switcher span {
-      @apply bg-dark absolute -top-1 left-0 flex h-6 w-6 items-center justify-center rounded-full transition-all duration-300 dark:bg-white; }
+      @apply bg-dark absolute -top-1 left-0 flex h-6 w-6 items-center justify-center rounded-full transition-all duration-300; }
     .theme-switcher input:checked + label span {
       @apply lg:left-4; }
   .btn {
@@ -127,13 +125,13 @@
   .btn-sm {
     @apply rounded-sm px-4 py-1.5 text-sm; }
   .btn-primary {
-    @apply border-primary bg-primary dark:border-darkmode-primary dark:text-dark text-white dark:bg-white; }
+    @apply border-primary bg-primary   text-white; }
   .btn-outline-primary {
-    @apply border-dark text-dark hover:bg-dark dark:hover:text-dark bg-transparent hover:text-white dark:border-white dark:text-white dark:hover:bg-white; } }
+    @apply border-dark text-dark hover:bg-dark  bg-transparent hover:text-white; } }
 
 @layer utilities {
   .bg-gradient {
-    @apply dark:from-darkmode-theme-light dark:to-darkmode-body bg-gradient-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%]; }
+    @apply bg-gradient-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%]; }
   .rounded-sm {
     @apply rounded-[4px]; }
   .rounded {
@@ -917,53 +915,29 @@
 
 .share-icons .share-link {
   @apply h-9 w-9 rounded leading-9;
-  @apply bg-primary hover:bg-primary dark:bg-darkmode-primary dark:hover:bg-darkmode-primary; }
-
-.share-icons .share-icon svg {
-  @apply dark:fill-dark; }
+  @apply bg-primary hover:bg-primary; }
 
 .tab {
-  @apply border-border dark:border-darkmode-border overflow-hidden rounded-lg border; }
+  @apply border-border  overflow-hidden rounded-lg border; }
   .tab-nav {
-    @apply border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light pl-4; }
+    @apply border-border bg-theme-light   pl-4; }
     .tab-nav-item {
-      @apply text-dark dark:text-darkmode-dark px-8 text-lg !important; }
+      @apply text-dark  px-8 text-lg !important; }
       .tab-nav-item.active {
-        @apply border-dark dark:border-darkmode-primary; }
+        @apply border-dark; }
   .tab-content-panel {
     @apply px-4 pt-0 !important; }
 
 .accordion {
-  @apply border-border bg-theme-light dark:border-darkmode-border dark:bg-darkmode-theme-light mb-6 overflow-hidden rounded-lg border; }
+  @apply border-border bg-theme-light   mb-6 overflow-hidden rounded-lg border; }
   .accordion-header {
-    @apply text-dark dark:text-darkmode-dark; }
+    @apply text-dark; }
 
 .cookie-box {
   @apply rounded-lg !important; }
 
-.search-wrapper .search-wrapper-content {
-  @apply dark:bg-darkmode-body; }
-
 .search-wrapper input {
-  @apply dark:bg-darkmode-theme-light dark:text-darkmode-text dark:border-darkmode-border dark:focus:border-darkmode-primary focus:ring-0; }
-
-.search-wrapper kbd {
-  @apply dark:bg-darkmode-theme-light; }
-
-.search-wrapper .search-wrapper-body {
-  @apply dark:bg-darkmode-theme-light dark:shadow-none; }
-
-.search-wrapper.search-page .search-wrapper-body {
-  @apply dark:bg-transparent; }
-
-.search-wrapper .search-result-info em {
-  @apply dark:text-white; }
+  @apply focus:ring-0; }
 
 .search-wrapper .search-result-item {
-  @apply dark:bg-darkmode-body dark:border-darkmode-border p-4; }
-  .search-wrapper .search-result-item .search-title {
-    @apply dark:text-darkmode-dark; }
-  .search-wrapper .search-result-item u {
-    @apply dark:text-darkmode-primary; }
-  .search-wrapper .search-result-item:focus, .search-wrapper .search-result-item.search-item-selected, .search-wrapper .search-result-item:hover {
-    @apply dark:bg-darkmode-primary/10; }
+  @apply p-4; }

@@ -9,9 +9,9 @@
       </a>
     </div>
     <!-- navbar toggler -->
-    <input class="hidden" id="nav-toggle" type="checkbox"/>
+    <input class="hidden" id="nav-toggle" type="checkbox" />
     <label
-      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark  lg:order-1"
       for="nav-toggle">
       <svg class="h-6 fill-current block" id="show-button" viewBox="0 0 20 20">
         <title>Menu Open</title>
@@ -46,7 +46,7 @@
               {{ .Name }}
               <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
                 <path
-                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
               </svg>
             </span>
             <ul
@@ -111,14 +111,14 @@
         {{ if .enable }}
           <button
             aria-label="search"
-            class="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white"
+            class="border-border text-dark hover:text-primary  mr-5 inline-block border-r pr-5 text-xl "
             data-target="search-modal">
             <i class="fa-solid fa-search"></i>
           </button>
         {{ end }}
       {{ end }}
 
-      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-theme-light rounded") }}
+      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1  rounded") }}
       {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
 
 

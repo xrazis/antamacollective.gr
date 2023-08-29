@@ -1,15 +1,14 @@
-<div
-  class="bg-theme-light dark:bg-darkmode-theme-light rounded p-8 text-center">
+<div class="bg-theme-light  rounded p-8 text-center">
   {{ $image:= .Params.image }}
   {{ if $image }}
-  {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto mb-6 rounded" "size" "120x120") }}
+    {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto mb-6 rounded" "size" "120x120") }}
   {{ else if .Params.Email }}
-  <img
-    alt="{{ .Title }}"
-    class="mx-auto mb-6 rounded"
-    height="120"
-    src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon"
-    width="120"/>
+    <img
+      alt="{{ .Title }}"
+      class="mx-auto mb-6 rounded"
+      height="120"
+      src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon"
+      width="120" />
   {{ end }}
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
@@ -19,12 +18,12 @@
   </p>
   <ul class="social-icons">
     {{ range .Params.social }}
-    <li>
-      <a href="{{ .link | safeURL }}" rel="noopener nofollow" target="_blank">
-        <span class="sr-only">{{ .title }}</span>
-        <i class="{{ .icon }}"></i>
-      </a>
-    </li>
+      <li>
+        <a href="{{ .link | safeURL }}" rel="noopener nofollow" target="_blank">
+          <span class="sr-only">{{ .title }}</span>
+          <i class="{{ .icon }}"></i>
+        </a>
+      </li>
     {{ end }}
   </ul>
 </div>

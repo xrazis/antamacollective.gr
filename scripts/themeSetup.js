@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const toggleComment = ({filepath, regex}) => {
+const toggleComment = ({ filepath, regex }) => {
   let updatedContent = fs.readFileSync(filepath, "utf8");
   const match = updatedContent.match(regex);
 
@@ -26,13 +26,13 @@ const toggleComment = ({filepath, regex}) => {
 
 const createNewfolder = (rootfolder, folderName) => {
   const newFolder = path.join(rootfolder, folderName);
-  fs.mkdirSync(newFolder, {recursive: true});
+  fs.mkdirSync(newFolder, { recursive: true });
   return newFolder;
 };
 
 const deleteFolder = (folderPath) => {
   if (fs.existsSync(folderPath)) {
-    fs.rmSync(folderPath, {recursive: true, force: true});
+    fs.rmSync(folderPath, { recursive: true, force: true });
   }
 };
 
@@ -47,9 +47,9 @@ const getFolderName = (rootfolder) => {
   return selectedTheme;
 };
 
-const iterateFilesAndFolders = (rootFolder, {destinationRoot}) => {
+const iterateFilesAndFolders = (rootFolder, { destinationRoot }) => {
   const directory = path.join(rootFolder);
-  const items = fs.readdirSync(directory, {withFileTypes: true});
+  const items = fs.readdirSync(directory, { withFileTypes: true });
   items.forEach((item) => {
     if (item.isDirectory()) {
       createNewfolder(destinationRoot, item.name);
@@ -95,11 +95,11 @@ const setupTheme = () => {
 
     const folder = createNewfolder(rootFolder, "exampleSite");
 
-    fs.readdirSync(rootFolder, {withFileTypes: true}).forEach((file) => {
+    fs.readdirSync(rootFolder, { withFileTypes: true }).forEach((file) => {
       if (includesFiles.includes(file.name)) {
         if (file.isDirectory()) {
           const destination = path.join(rootFolder, "exampleSite", file.name);
-          fs.mkdirSync(destination, {recursive: true});
+          fs.mkdirSync(destination, { recursive: true });
           iterateFilesAndFolders(path.join(rootFolder, file.name), {
             destinationRoot: destination,
           });

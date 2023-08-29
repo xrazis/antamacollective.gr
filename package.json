@@ -15,7 +15,7 @@
     "remove-darkmode": "node scripts/removeDarkmode.js && yarn format",
     "project-setup": "node scripts/projectSetup.js",
     "theme-setup": "node scripts/themeSetup.js",
-    "format": "prettier -w hugoplate-main"
+    "format": "prettier -w ."
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",

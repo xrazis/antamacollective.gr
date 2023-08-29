@@ -14,10 +14,10 @@
   typeof exports === "object" && typeof module !== "undefined"
     ? (module.exports = factory())
     : typeof define === "function" && define.amd
-      ? define(factory)
-      : ((global =
+    ? define(factory)
+    : ((global =
         typeof globalThis !== "undefined" ? globalThis : global || self),
-        (global.Swiper = factory()));
+      (global.Swiper = factory()));
 })(this, function () {
   "use strict";
 
@@ -67,15 +67,12 @@
   const ssrDocument = {
     body: {},
 
-    addEventListener() {
-    },
+    addEventListener() {},
 
-    removeEventListener() {
-    },
+    removeEventListener() {},
 
     activeElement: {
-      blur() {
-      },
+      blur() {},
 
       nodeName: "",
     },
@@ -94,8 +91,7 @@
 
     createEvent() {
       return {
-        initEvent() {
-        },
+        initEvent() {},
       };
     },
 
@@ -105,8 +101,7 @@
         childNodes: [],
         style: {},
 
-        setAttribute() {
-        },
+        setAttribute() {},
 
         getElementsByTagName() {
           return [];
@@ -156,27 +151,21 @@
       search: "",
     },
     history: {
-      replaceState() {
-      },
+      replaceState() {},
 
-      pushState() {
-      },
+      pushState() {},
 
-      go() {
-      },
+      go() {},
 
-      back() {
-      },
+      back() {},
     },
     CustomEvent: function CustomEvent() {
       return this;
     },
 
-    addEventListener() {
-    },
+    addEventListener() {},
 
-    removeEventListener() {
-    },
+    removeEventListener() {},
 
     getComputedStyle() {
       return {
@@ -186,19 +175,15 @@
       };
     },
 
-    Image() {
-    },
+    Image() {},
 
-    Date() {
-    },
+    Date() {},
 
     screen: {},
 
-    setTimeout() {
-    },
+    setTimeout() {},
 
-    clearTimeout() {
-    },
+    clearTimeout() {},
 
     matchMedia() {
       return {};
@@ -1330,7 +1315,7 @@
   }
 
   function animateCSSModeScroll(_ref) {
-    let {swiper, targetPosition, side} = _ref;
+    let { swiper, targetPosition, side } = _ref;
     const window = getWindow();
     const startPosition = -swiper.translate;
     let startTime = null;
@@ -1433,7 +1418,7 @@
   let deviceCached;
 
   function calcDevice(_temp) {
-    let {userAgent} = _temp === void 0 ? {} : _temp;
+    let { userAgent } = _temp === void 0 ? {} : _temp;
     const support = getSupport();
     const window = getWindow();
     const platform = window.navigator.platform;
@@ -1534,7 +1519,7 @@
   }
 
   function Resize(_ref) {
-    let {swiper, on, emit} = _ref;
+    let { swiper, on, emit } = _ref;
     const window = getWindow();
     let observer = null;
     let animationFrame = null;
@@ -1549,11 +1534,11 @@
       if (!swiper || swiper.destroyed || !swiper.initialized) return;
       observer = new ResizeObserver((entries) => {
         animationFrame = window.requestAnimationFrame(() => {
-          const {width, height} = swiper;
+          const { width, height } = swiper;
           let newWidth = width;
           let newHeight = height;
           entries.forEach((_ref2) => {
-            let {contentBoxSize, contentRect, target} = _ref2;
+            let { contentBoxSize, contentRect, target } = _ref2;
             if (target && target !== swiper.el) return;
             newWidth = contentRect
               ? contentRect.width
@@ -1607,7 +1592,7 @@
   }
 
   function Observer(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     const observers = [];
     const window = getWindow();
 
@@ -2021,7 +2006,7 @@
           if (boxSizing && boxSizing === "border-box") {
             slideSize = width + marginLeft + marginRight;
           } else {
-            const {clientWidth, offsetWidth} = slide[0];
+            const { clientWidth, offsetWidth } = slide[0];
             slideSize =
               width +
               paddingLeft +
@@ -2073,7 +2058,7 @@
         if (params.roundLengths) slidePosition = Math.floor(slidePosition);
         if (
           (index - Math.min(swiper.params.slidesPerGroupSkip, index)) %
-          swiper.params.slidesPerGroup ===
+            swiper.params.slidesPerGroup ===
           0
         )
           snapGrid.push(slidePosition);
@@ -2126,7 +2111,7 @@
 
       if (
         Math.floor(swiper.virtualSize - swiperSize) -
-        Math.floor(snapGrid[snapGrid.length - 1]) >
+          Math.floor(snapGrid[snapGrid.length - 1]) >
         1
       ) {
         snapGrid.push(swiper.virtualSize - swiperSize);
@@ -2326,7 +2311,7 @@
 
     const swiper = this;
     const params = swiper.params;
-    const {slides, rtlTranslate: rtl, snapGrid} = swiper;
+    const { slides, rtlTranslate: rtl, snapGrid } = swiper;
     if (slides.length === 0) return;
     if (typeof slides[0].swiperSlideOffset === "undefined")
       swiper.updateSlidesOffset();
@@ -2390,7 +2375,7 @@
 
     const params = swiper.params;
     const translatesDiff = swiper.maxTranslate() - swiper.minTranslate();
-    let {progress, isBeginning, isEnd} = swiper;
+    let { progress, isBeginning, isEnd } = swiper;
     const wasBeginning = isBeginning;
     const wasEnd = isEnd;
 
@@ -2432,7 +2417,7 @@
 
   function updateSlidesClasses() {
     const swiper = this;
-    const {slides, params, $wrapperEl, activeIndex, realIndex} = swiper;
+    const { slides, params, $wrapperEl, activeIndex, realIndex } = swiper;
     const isVirtual = swiper.virtual && params.virtual.enabled;
     slides.removeClass(
       `${params.slideActiveClass} ${params.slideNextClass} ${params.slidePrevClass} ${params.slideDuplicateActiveClass} ${params.slideDuplicateNextClass} ${params.slideDuplicatePrevClass}`,
@@ -2558,7 +2543,7 @@
           if (
             translate >= slidesGrid[i] &&
             translate <
-            slidesGrid[i + 1] - (slidesGrid[i + 1] - slidesGrid[i]) / 2
+              slidesGrid[i + 1] - (slidesGrid[i + 1] - slidesGrid[i]) / 2
           ) {
             activeIndex = i;
           } else if (
@@ -2599,7 +2584,7 @@
 
     const realIndex = parseInt(
       swiper.slides.eq(activeIndex).attr("data-swiper-slide-index") ||
-      activeIndex,
+        activeIndex,
       10,
     );
     Object.assign(swiper, {
@@ -2681,7 +2666,7 @@
     }
 
     const swiper = this;
-    const {params, rtlTranslate: rtl, translate, $wrapperEl} = swiper;
+    const { params, rtlTranslate: rtl, translate, $wrapperEl } = swiper;
 
     if (params.virtualTranslate) {
       return rtl ? -translate : translate;
@@ -2778,7 +2763,7 @@
     }
 
     const swiper = this;
-    const {params, wrapperEl} = swiper;
+    const { params, wrapperEl } = swiper;
 
     if (swiper.animating && params.preventInteractionOnTransition) {
       return false;
@@ -2893,8 +2878,8 @@
   }
 
   function transitionEmit(_ref) {
-    let {swiper, runCallbacks, direction, step} = _ref;
-    const {activeIndex, previousIndex} = swiper;
+    let { swiper, runCallbacks, direction, step } = _ref;
+    const { activeIndex, previousIndex } = swiper;
     let dir = direction;
 
     if (!dir) {
@@ -2927,7 +2912,7 @@
     }
 
     const swiper = this;
-    const {params} = swiper;
+    const { params } = swiper;
     if (params.cssMode) return;
 
     if (params.autoHeight) {
@@ -2948,7 +2933,7 @@
     }
 
     const swiper = this;
-    const {params} = swiper;
+    const { params } = swiper;
     swiper.animating = false;
     if (params.cssMode) return;
     swiper.setTransition(0);
@@ -3056,7 +3041,7 @@
           if (
             normalizedTranslate >= normalizedGrid &&
             normalizedTranslate <
-            normalizedGridNext - (normalizedGridNext - normalizedGrid) / 2
+              normalizedGridNext - (normalizedGridNext - normalizedGrid) / 2
           ) {
             slideIndex = i;
           } else if (
@@ -3234,7 +3219,7 @@
     }
 
     const swiper = this;
-    const {animating, enabled, params} = swiper;
+    const { animating, enabled, params } = swiper;
     if (!enabled) return swiper;
     let perGroup = params.slidesPerGroup;
 
@@ -3279,7 +3264,7 @@
     }
 
     const swiper = this;
-    const {params, animating, snapGrid, slidesGrid, rtlTranslate, enabled} =
+    const { params, animating, snapGrid, slidesGrid, rtlTranslate, enabled } =
       swiper;
     if (!enabled) return swiper;
 
@@ -3409,7 +3394,7 @@
 
   function slideToClickedSlide() {
     const swiper = this;
-    const {params, $wrapperEl} = swiper;
+    const { params, $wrapperEl } = swiper;
     const slidesPerView =
       params.slidesPerView === "auto"
         ? swiper.slidesPerViewDynamic()
@@ -3428,7 +3413,7 @@
         if (
           slideToIndex < swiper.loopedSlides - slidesPerView / 2 ||
           slideToIndex >
-          swiper.slides.length - swiper.loopedSlides + slidesPerView / 2
+            swiper.slides.length - swiper.loopedSlides + slidesPerView / 2
         ) {
           swiper.loopFix();
           slideToIndex = $wrapperEl
@@ -3475,7 +3460,7 @@
   function loopCreate() {
     const swiper = this;
     const document = getDocument();
-    const {params, $wrapperEl} = swiper; // Remove duplicated slides
+    const { params, $wrapperEl } = swiper; // Remove duplicated slides
 
     const $selector =
       $wrapperEl.children().length > 0
@@ -3595,7 +3580,7 @@
 
   function loopDestroy() {
     const swiper = this;
-    const {$wrapperEl, params, slides} = swiper;
+    const { $wrapperEl, params, slides } = swiper;
     $wrapperEl
       .children(
         `.${params.slideClass}.${params.slideDuplicateClass},.${params.slideClass}.${params.slideBlankClass}`,
@@ -3642,7 +3627,7 @@
 
     swiper[
       swiper.params.touchEventsTarget === "container" ? "el" : "wrapperEl"
-      ].style.cursor = "";
+    ].style.cursor = "";
   }
 
   var grabCursor = {
@@ -3670,7 +3655,7 @@
     const document = getDocument();
     const window = getWindow();
     const data = swiper.touchEventsData;
-    const {params, touches, enabled} = swiper;
+    const { params, touches, enabled } = swiper;
     if (!enabled) return;
 
     if (swiper.animating && params.preventInteractionOnTransition) {
@@ -3814,7 +3799,7 @@
     const document = getDocument();
     const swiper = this;
     const data = swiper.touchEventsData;
-    const {params, touches, rtlTranslate: rtl, enabled} = swiper;
+    const { params, touches, rtlTranslate: rtl, enabled } = swiper;
     if (!enabled) return;
     let e = event;
     if (e.originalEvent) e = e.originalEvent;
@@ -4003,7 +3988,7 @@
           swiper.minTranslate() -
           1 +
           (-swiper.minTranslate() + data.startTranslate + diff) **
-          resistanceRatio;
+            resistanceRatio;
     } else if (diff < 0 && data.currentTranslate < swiper.maxTranslate()) {
       disableParentSwiper = false;
       if (params.resistance)
@@ -4011,7 +3996,7 @@
           swiper.maxTranslate() +
           1 -
           (swiper.maxTranslate() - data.startTranslate - diff) **
-          resistanceRatio;
+            resistanceRatio;
     }
 
     if (disableParentSwiper) {
@@ -4078,7 +4063,7 @@
   function onTouchEnd(event) {
     const swiper = this;
     const data = swiper.touchEventsData;
-    const {params, touches, rtlTranslate: rtl, slidesGrid, enabled} = swiper;
+    const { params, touches, rtlTranslate: rtl, slidesGrid, enabled } = swiper;
     if (!enabled) return;
     let e = event;
     if (e.originalEvent) e = e.originalEvent;
@@ -4273,14 +4258,14 @@
 
   function onResize() {
     const swiper = this;
-    const {params, el} = swiper;
+    const { params, el } = swiper;
     if (el && el.offsetWidth === 0) return; // Breakpoints
 
     if (params.breakpoints) {
       swiper.setBreakpoint();
     } // Save locks
 
-    const {allowSlideNext, allowSlidePrev, snapGrid} = swiper; // Disable locks on resize
+    const { allowSlideNext, allowSlidePrev, snapGrid } = swiper; // Disable locks on resize
 
     swiper.allowSlideNext = true;
     swiper.allowSlidePrev = true;
@@ -4327,7 +4312,7 @@
 
   function onScroll() {
     const swiper = this;
-    const {wrapperEl, rtlTranslate, enabled} = swiper;
+    const { wrapperEl, rtlTranslate, enabled } = swiper;
     if (!enabled) return;
     swiper.previousTranslate = swiper.translate;
 
@@ -4360,12 +4345,11 @@
 
   let dummyEventAttached = false;
 
-  function dummyEventListener() {
-  }
+  function dummyEventListener() {}
 
   const events = (swiper, method) => {
     const document = getDocument();
-    const {params, touchEvents, el, wrapperEl, device, support} = swiper;
+    const { params, touchEvents, el, wrapperEl, device, support } = swiper;
     const capture = !!params.nested;
     const domMethod =
       method === "on" ? "addEventListener" : "removeEventListener";
@@ -4381,9 +4365,9 @@
         support.passiveListener &&
         params.passiveListeners
           ? {
-            passive: true,
-            capture: false,
-          }
+              passive: true,
+              capture: false,
+            }
           : false;
       el[domMethod](touchEvents.start, swiper.onTouchStart, passiveListener);
       el[domMethod](
@@ -4391,9 +4375,9 @@
         swiper.onTouchMove,
         support.passiveListener
           ? {
-            passive: false,
-            capture,
-          }
+              passive: false,
+              capture,
+            }
           : capture,
       );
       el[domMethod](touchEvents.end, swiper.onTouchEnd, passiveListener);
@@ -4427,7 +4411,7 @@
   function attachEvents() {
     const swiper = this;
     const document = getDocument();
-    const {params, support} = swiper;
+    const { params, support } = swiper;
     swiper.onTouchStart = onTouchStart.bind(swiper);
     swiper.onTouchMove = onTouchMove.bind(swiper);
     swiper.onTouchEnd = onTouchEnd.bind(swiper);
@@ -4462,7 +4446,7 @@
 
   function setBreakpoint() {
     const swiper = this;
-    const {activeIndex, initialized, loopedSlides = 0, params, $el} = swiper;
+    const { activeIndex, initialized, loopedSlides = 0, params, $el } = swiper;
     const breakpoints = params.breakpoints;
     if (!breakpoints || (breakpoints && Object.keys(breakpoints).length === 0))
       return; // Get breakpoint for window width and update parameters
@@ -4571,7 +4555,7 @@
     points.sort((a, b) => parseInt(a.value, 10) - parseInt(b.value, 10));
 
     for (let i = 0; i < points.length; i += 1) {
-      const {point, value} = points[i];
+      const { point, value } = points[i];
 
       if (base === "window") {
         if (window.matchMedia(`(min-width: ${value}px)`).matches) {
@@ -4664,7 +4648,7 @@
 
   function removeClasses() {
     const swiper = this;
-    const {$el, classNames} = swiper;
+    const { $el, classNames } = swiper;
     $el.removeClass(classNames.join(" "));
     swiper.emitContainerClasses();
   }
@@ -4750,8 +4734,8 @@
 
   function checkOverflow() {
     const swiper = this;
-    const {isLocked: wasLocked, params} = swiper;
-    const {slidesOffsetBefore} = params;
+    const { isLocked: wasLocked, params } = swiper;
+    const { slidesOffsetBefore } = params;
 
     if (slidesOffsetBefore) {
       const lastSlideIndex = swiper.slides.length - 1;
@@ -4925,7 +4909,7 @@
 
       if (
         ["navigation", "pagination", "scrollbar"].indexOf(moduleParamName) >=
-        0 &&
+          0 &&
         params[moduleParamName] === true
       ) {
         params[moduleParamName] = {
@@ -5308,7 +5292,7 @@
           for (let i = activeIndex + 1; i < slides.length; i += 1) {
             const slideInView = exact
               ? slidesGrid[i] + slidesSizesGrid[i] - slidesGrid[activeIndex] <
-              swiperSize
+                swiperSize
               : slidesGrid[i] - slidesGrid[activeIndex] < swiperSize;
 
             if (slideInView) {
@@ -5334,7 +5318,7 @@
     update() {
       const swiper = this;
       if (!swiper || swiper.destroyed) return;
-      const {snapGrid, params} = swiper; // Breakpoints
+      const { snapGrid, params } = swiper; // Breakpoints
 
       if (params.breakpoints) {
         swiper.setBreakpoint();
@@ -5561,7 +5545,7 @@
       }
 
       const swiper = this;
-      const {params, $el, $wrapperEl, slides} = swiper;
+      const { params, $el, $wrapperEl, slides } = swiper;
 
       if (typeof swiper.params === "undefined" || swiper.destroyed) {
         return null;
@@ -5621,7 +5605,7 @@
   Swiper.use([Resize, Observer]);
 
   function Virtual(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     extendParams({
       virtual: {
         enabled: false,
@@ -5654,8 +5638,8 @@
       const $slideEl = params.renderSlide
         ? $(params.renderSlide.call(swiper, slide, index))
         : $(
-          `<div class="${swiper.params.slideClass}" data-swiper-slide-index="${index}">${slide}</div>`,
-        );
+            `<div class="${swiper.params.slideClass}" data-swiper-slide-index="${index}">${slide}</div>`,
+          );
       if (!$slideEl.attr("data-swiper-slide-index"))
         $slideEl.attr("data-swiper-slide-index", index);
       if (params.cache) swiper.virtual.cache[index] = $slideEl;
@@ -5663,8 +5647,8 @@
     }
 
     function update(force) {
-      const {slidesPerView, slidesPerGroup, centeredSlides} = swiper.params;
-      const {addSlidesBefore, addSlidesAfter} = swiper.params.virtual;
+      const { slidesPerView, slidesPerGroup, centeredSlides } = swiper.params;
+      const { addSlidesBefore, addSlidesAfter } = swiper.params.virtual;
       const {
         from: previousFrom,
         to: previousTo,
@@ -5935,7 +5919,7 @@
 
   /* eslint-disable consistent-return */
   function Keyboard(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     const document = getDocument();
     const window = getWindow();
     swiper.keyboard = {
@@ -5951,7 +5935,7 @@
 
     function handle(event) {
       if (!swiper.enabled) return;
-      const {rtlTranslate: rtl} = swiper;
+      const { rtlTranslate: rtl } = swiper;
       let e = event;
       if (e.originalEvent) e = e.originalEvent; // jquery fix
 
@@ -6105,7 +6089,7 @@
 
   /* eslint-disable consistent-return */
   function Mousewheel(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     const window = getWindow();
     extendParams({
       mousewheel: {
@@ -6347,9 +6331,9 @@
       disableParentSwiper = swiper.params.loop
         ? true
         : !(
-          positions === swiper.minTranslate() ||
-          positions === swiper.maxTranslate()
-        );
+            positions === swiper.minTranslate() ||
+            positions === swiper.maxTranslate()
+          );
       if (disableParentSwiper && swiper.params.nested) e.stopPropagation();
 
       if (!swiper.params.freeMode || !swiper.params.freeMode.enabled) {
@@ -6616,7 +6600,7 @@
   }
 
   function Navigation(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     extendParams({
       navigation: {
         nextEl: null,
@@ -6669,7 +6653,7 @@
     function update() {
       // Update Navigation Buttons
       if (swiper.params.loop) return;
-      const {$nextEl, $prevEl} = swiper.navigation;
+      const { $nextEl, $prevEl } = swiper.navigation;
       toggleEl($prevEl, swiper.isBeginning && !swiper.params.rewind);
       toggleEl($nextEl, swiper.isEnd && !swiper.params.rewind);
     }
@@ -6724,7 +6708,7 @@
     }
 
     function destroy() {
-      const {$nextEl, $prevEl} = swiper.navigation;
+      const { $nextEl, $prevEl } = swiper.navigation;
 
       if ($nextEl && $nextEl.length) {
         $nextEl.off("click", onNextClick);
@@ -6748,7 +6732,7 @@
       destroy();
     });
     on("enable disable", () => {
-      const {$nextEl, $prevEl} = swiper.navigation;
+      const { $nextEl, $prevEl } = swiper.navigation;
 
       if ($nextEl) {
         $nextEl[swiper.enabled ? "removeClass" : "addClass"](
@@ -6763,7 +6747,7 @@
       }
     });
     on("click", (_s, e) => {
-      const {$nextEl, $prevEl} = swiper.navigation;
+      const { $nextEl, $prevEl } = swiper.navigation;
       const targetEl = e.target;
 
       if (
@@ -6821,7 +6805,7 @@
   }
 
   function Pagination(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     const pfx = "swiper-pagination";
     extendParams({
       pagination: {
@@ -6872,7 +6856,7 @@
     }
 
     function setSideBullets($bulletEl, position) {
-      const {bulletActiveClass} = swiper.params.pagination;
+      const { bulletActiveClass } = swiper.params.pagination;
       $bulletEl[position]()
         .addClass(`${bulletActiveClass}-${position}`)
         [position]()
@@ -6893,15 +6877,15 @@
       let current;
       const total = swiper.params.loop
         ? Math.ceil(
-          (slidesLength - swiper.loopedSlides * 2) /
-          swiper.params.slidesPerGroup,
-        )
+            (slidesLength - swiper.loopedSlides * 2) /
+              swiper.params.slidesPerGroup,
+          )
         : swiper.snapGrid.length;
 
       if (swiper.params.loop) {
         current = Math.ceil(
           (swiper.activeIndex - swiper.loopedSlides) /
-          swiper.params.slidesPerGroup,
+            swiper.params.slidesPerGroup,
         );
 
         if (current > slidesLength - 1 - swiper.loopedSlides * 2) {
@@ -7101,9 +7085,9 @@
       if (params.type === "bullets") {
         let numberOfBullets = swiper.params.loop
           ? Math.ceil(
-            (slidesLength - swiper.loopedSlides * 2) /
-            swiper.params.slidesPerGroup,
-          )
+              (slidesLength - swiper.loopedSlides * 2) /
+                swiper.params.slidesPerGroup,
+            )
           : swiper.snapGrid.length;
 
         if (
@@ -7292,7 +7276,7 @@
       destroy();
     });
     on("enable disable", () => {
-      const {$el} = swiper.pagination;
+      const { $el } = swiper.pagination;
 
       if ($el) {
         $el[swiper.enabled ? "removeClass" : "addClass"](
@@ -7305,7 +7289,7 @@
     });
     on("click", (_s, e) => {
       const targetEl = e.target;
-      const {$el} = swiper.pagination;
+      const { $el } = swiper.pagination;
 
       if (
         swiper.params.pagination.el &&
@@ -7316,7 +7300,7 @@
         if (
           swiper.navigation &&
           ((swiper.navigation.nextEl &&
-              targetEl === swiper.navigation.nextEl) ||
+            targetEl === swiper.navigation.nextEl) ||
             (swiper.navigation.prevEl && targetEl === swiper.navigation.prevEl))
         )
           return;
@@ -7340,7 +7324,7 @@
   }
 
   function Scrollbar(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     const document = getDocument();
     let isTouched = false;
     let timeout = null;
@@ -7369,8 +7353,8 @@
 
     function setTranslate() {
       if (!swiper.params.scrollbar.el || !swiper.scrollbar.el) return;
-      const {scrollbar, rtlTranslate: rtl, progress} = swiper;
-      const {$dragEl, $el} = scrollbar;
+      const { scrollbar, rtlTranslate: rtl, progress } = swiper;
+      const { $dragEl, $el } = scrollbar;
       const params = swiper.params.scrollbar;
       let newSize = dragSize;
       let newPos = (trackSize - dragSize) * progress;
@@ -7416,8 +7400,8 @@
 
     function updateSize() {
       if (!swiper.params.scrollbar.el || !swiper.scrollbar.el) return;
-      const {scrollbar} = swiper;
-      const {$dragEl, $el} = scrollbar;
+      const { scrollbar } = swiper;
+      const { $dragEl, $el } = scrollbar;
       $dragEl[0].style.width = "";
       $dragEl[0].style.height = "";
       trackSize = swiper.isHorizontal()
@@ -7471,8 +7455,8 @@
     }
 
     function setDragPosition(e) {
-      const {scrollbar, rtlTranslate: rtl} = swiper;
-      const {$el} = scrollbar;
+      const { scrollbar, rtlTranslate: rtl } = swiper;
+      const { $el } = scrollbar;
       let positionRatio;
       positionRatio =
         (getPointerPosition(e) -
@@ -7496,14 +7480,14 @@
 
     function onDragStart(e) {
       const params = swiper.params.scrollbar;
-      const {scrollbar, $wrapperEl} = swiper;
-      const {$el, $dragEl} = scrollbar;
+      const { scrollbar, $wrapperEl } = swiper;
+      const { $el, $dragEl } = scrollbar;
       isTouched = true;
       dragStartPos =
         e.target === $dragEl[0] || e.target === $dragEl
           ? getPointerPosition(e) -
-          e.target.getBoundingClientRect()[
-            swiper.isHorizontal() ? "left" : "top"
+            e.target.getBoundingClientRect()[
+              swiper.isHorizontal() ? "left" : "top"
             ]
           : null;
       e.preventDefault();
@@ -7526,8 +7510,8 @@
     }
 
     function onDragMove(e) {
-      const {scrollbar, $wrapperEl} = swiper;
-      const {$el, $dragEl} = scrollbar;
+      const { scrollbar, $wrapperEl } = swiper;
+      const { $el, $dragEl } = scrollbar;
       if (!isTouched) return;
       if (e.preventDefault) e.preventDefault();
       else e.returnValue = false;
@@ -7540,8 +7524,8 @@
 
     function onDragEnd(e) {
       const params = swiper.params.scrollbar;
-      const {scrollbar, $wrapperEl} = swiper;
-      const {$el} = scrollbar;
+      const { scrollbar, $wrapperEl } = swiper;
+      const { $el } = scrollbar;
       if (!isTouched) return;
       isTouched = false;
 
@@ -7578,16 +7562,16 @@
       const activeListener =
         support.passiveListener && params.passiveListeners
           ? {
-            passive: false,
-            capture: false,
-          }
+              passive: false,
+              capture: false,
+            }
           : false;
       const passiveListener =
         support.passiveListener && params.passiveListeners
           ? {
-            passive: true,
-            capture: false,
-          }
+              passive: true,
+              capture: false,
+            }
           : false;
       if (!target) return;
       const eventMethod =
@@ -7631,7 +7615,7 @@
     }
 
     function init() {
-      const {scrollbar, $el: $swiperEl} = swiper;
+      const { scrollbar, $el: $swiperEl } = swiper;
       swiper.params.scrollbar = createElementIfNotDefined(
         swiper,
         swiper.originalParams.scrollbar,
@@ -7697,7 +7681,7 @@
       setTransition(duration);
     });
     on("enable disable", () => {
-      const {$el} = swiper.scrollbar;
+      const { $el } = swiper.scrollbar;
 
       if ($el) {
         $el[swiper.enabled ? "removeClass" : "addClass"](
@@ -7717,7 +7701,7 @@
   }
 
   function Parallax(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       parallax: {
         enabled: false,
@@ -7725,7 +7709,7 @@
     });
 
     const setTransform = (el, progress) => {
-      const {rtl} = swiper;
+      const { rtl } = swiper;
       const $el = $(el);
       const rtlFactor = rtl ? -1 : 1;
       const p = $el.attr("data-swiper-parallax") || "0";
@@ -7772,7 +7756,7 @@
     };
 
     const setTranslate = () => {
-      const {$el, slides, progress, snapGrid} = swiper;
+      const { $el, slides, progress, snapGrid } = swiper;
       $el
         .children(
           "[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]",
@@ -7807,7 +7791,7 @@
         duration = swiper.params.speed;
       }
 
-      const {$el} = swiper;
+      const { $el } = swiper;
       $el
         .find(
           "[data-swiper-parallax], [data-swiper-parallax-x], [data-swiper-parallax-y], [data-swiper-parallax-opacity], [data-swiper-parallax-scale]",
@@ -7842,7 +7826,7 @@
   }
 
   function Zoom(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     const window = getWindow();
     extendParams({
       zoom: {
@@ -8092,7 +8076,7 @@
         if (
           swiper.isHorizontal() &&
           ((Math.floor(image.minX) === Math.floor(image.startX) &&
-              image.touchesCurrent.x < image.touchesStart.x) ||
+            image.touchesCurrent.x < image.touchesStart.x) ||
             (Math.floor(image.maxX) === Math.floor(image.startX) &&
               image.touchesCurrent.x > image.touchesStart.x))
         ) {
@@ -8103,7 +8087,7 @@
         if (
           !swiper.isHorizontal() &&
           ((Math.floor(image.minY) === Math.floor(image.startY) &&
-              image.touchesCurrent.y < image.touchesStart.y) ||
+            image.touchesCurrent.y < image.touchesStart.y) ||
             (Math.floor(image.maxY) === Math.floor(image.startY) &&
               image.touchesCurrent.y > image.touchesStart.y))
         ) {
@@ -8432,15 +8416,15 @@
         support.passiveListener &&
         swiper.params.passiveListeners
           ? {
-            passive: true,
-            capture: false,
-          }
+              passive: true,
+              capture: false,
+            }
           : false;
       const activeListenerWithCapture = support.passiveListener
         ? {
-          passive: false,
-          capture: true,
-        }
+            passive: false,
+            capture: true,
+          }
         : true;
       return {
         passiveListener,
@@ -8453,7 +8437,7 @@
     }
 
     function toggleGestures(method) {
-      const {passiveListener} = getListeners();
+      const { passiveListener } = getListeners();
       const slideSelector = getSlideSelector();
       swiper.$wrapperEl[method](
         "gesturestart",
@@ -8492,7 +8476,7 @@
       if (zoom.enabled) return;
       zoom.enabled = true;
       const support = swiper.support;
-      const {passiveListener, activeListenerWithCapture} = getListeners();
+      const { passiveListener, activeListenerWithCapture } = getListeners();
       const slideSelector = getSlideSelector(); // Scale image
 
       if (support.gestures) {
@@ -8549,7 +8533,7 @@
       if (!zoom.enabled) return;
       const support = swiper.support;
       zoom.enabled = false;
-      const {passiveListener, activeListenerWithCapture} = getListeners();
+      const { passiveListener, activeListenerWithCapture } = getListeners();
       const slideSelector = getSlideSelector(); // Scale image
 
       if (support.gestures) {
@@ -8651,7 +8635,7 @@
   }
 
   function Lazy(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     extendParams({
       lazy: {
         checkInView: false,
@@ -8681,8 +8665,8 @@
       const isVirtual = swiper.virtual && swiper.params.virtual.enabled;
       const $slideEl = isVirtual
         ? swiper.$wrapperEl.children(
-          `.${swiper.params.slideClass}[data-swiper-slide-index="${index}"]`,
-        )
+            `.${swiper.params.slideClass}[data-swiper-slide-index="${index}"]`,
+          )
         : swiper.slides.eq(index);
       const $images = $slideEl.find(
         `.${params.elementClass}:not(.${params.loadedClass}):not(.${params.loadingClass})`,
@@ -8787,7 +8771,7 @@
     }
 
     function load() {
-      const {$wrapperEl, params: swiperParams, slides, activeIndex} = swiper;
+      const { $wrapperEl, params: swiperParams, slides, activeIndex } = swiper;
       const isVirtual = swiper.virtual && swiperParams.virtual.enabled;
       const params = swiperParams.lazy;
       let slidesPerView = swiperParams.slidesPerView;
@@ -8884,7 +8868,7 @@
         ? window.innerHeight
         : $scrollElement[0].offsetHeight;
       const swiperOffset = swiper.$el.offset();
-      const {rtlTranslate: rtl} = swiper;
+      const { rtlTranslate: rtl } = swiper;
       let inView = false;
       if (rtl) swiperOffset.left -= swiper.$el[0].scrollLeft;
       const swiperCoord = [
@@ -8914,9 +8898,9 @@
         swiper.support.passiveListener &&
         swiper.params.passiveListeners
           ? {
-            passive: true,
-            capture: false,
-          }
+              passive: true,
+              capture: false,
+            }
           : false;
 
       if (inView) {
@@ -9012,7 +8996,7 @@
 
   /* eslint no-bitwise: ["error", { "allow": [">>"] }] */
   function Controller(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       controller: {
         control: undefined,
@@ -9065,7 +9049,7 @@
 
         return (
           ((x2 - this.x[i1]) * (this.y[i3] - this.y[i1])) /
-          (this.x[i3] - this.x[i1]) +
+            (this.x[i3] - this.x[i1]) +
           this.y[i1]
         );
       };
@@ -9219,7 +9203,7 @@
   }
 
   function A11y(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       a11y: {
         enabled: true,
@@ -9343,7 +9327,7 @@
     function updateNavigation() {
       if (swiper.params.loop || swiper.params.rewind || !swiper.navigation)
         return;
-      const {$nextEl, $prevEl} = swiper.navigation;
+      const { $nextEl, $prevEl } = swiper.navigation;
 
       if ($prevEl && $prevEl.length > 0) {
         if (swiper.isBeginning) {
@@ -9468,8 +9452,8 @@
       addElRole($(swiper.slides), params.slideRole);
       const slidesLength = swiper.params.loop
         ? swiper.slides.filter(
-          (el) => !el.classList.contains(swiper.params.slideDuplicateClass),
-        ).length
+            (el) => !el.classList.contains(swiper.params.slideDuplicateClass),
+          ).length
         : swiper.slides.length;
       swiper.slides.each((slideEl, index) => {
         const $slideEl = $(slideEl);
@@ -9568,7 +9552,7 @@
   }
 
   function History(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       history: {
         enabled: false,
@@ -9736,7 +9720,7 @@
   }
 
   function HashNavigation(_ref) {
-    let {swiper, extendParams, emit, on} = _ref;
+    let { swiper, extendParams, emit, on } = _ref;
     let initialized = false;
     const document = getDocument();
     const window = getWindow();
@@ -9853,7 +9837,7 @@
 
   /* eslint no-underscore-dangle: "off" */
   function Autoplay(_ref) {
-    let {swiper, extendParams, on, emit} = _ref;
+    let { swiper, extendParams, on, emit } = _ref;
     let timeout;
     swiper.autoplay = {
       running: false,
@@ -10081,7 +10065,7 @@
   }
 
   function Thumb(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       thumbs: {
         swiper: null,
@@ -10154,7 +10138,7 @@
     }
 
     function init() {
-      const {thumbs: thumbsParams} = swiper.params;
+      const { thumbs: thumbsParams } = swiper.params;
       if (initialized) return false;
       initialized = true;
       const SwiperClass = swiper.constructor;
@@ -10272,7 +10256,7 @@
           } else if (
             newThumbsIndex > currentThumbsIndex &&
             thumbsSwiper.params.slidesPerGroup === 1
-          ) ;
+          );
 
           thumbsSwiper.slideTo(newThumbsIndex, initial ? 0 : undefined);
         }
@@ -10311,7 +10295,7 @@
     }
 
     on("beforeInit", () => {
-      const {thumbs} = swiper.params;
+      const { thumbs } = swiper.params;
       if (!thumbs || !thumbs.swiper) return;
       init();
       update(true);
@@ -10340,7 +10324,7 @@
   }
 
   function freeMode(_ref) {
-    let {swiper, extendParams, emit, once} = _ref;
+    let { swiper, extendParams, emit, once } = _ref;
     extendParams({
       freeMode: {
         enabled: false,
@@ -10365,7 +10349,7 @@
     }
 
     function onTouchMove() {
-      const {touchEventsData: data, touches} = swiper; // Velocity
+      const { touchEventsData: data, touches } = swiper; // Velocity
 
       if (data.velocities.length === 0) {
         data.velocities.push({
@@ -10381,7 +10365,7 @@
     }
 
     function onTouchEnd(_ref2) {
-      let {currentPos} = _ref2;
+      let { currentPos } = _ref2;
       const {
         params,
         $wrapperEl,
@@ -10481,7 +10465,7 @@
 
           if (
             Math.abs(snapGrid[nextSlide] - newPosition) <
-            Math.abs(snapGrid[nextSlide - 1] - newPosition) ||
+              Math.abs(snapGrid[nextSlide - 1] - newPosition) ||
             swiper.swipeDirection === "next"
           ) {
             newPosition = snapGrid[nextSlide];
@@ -10598,7 +10582,7 @@
   }
 
   function Grid(_ref) {
-    let {swiper, extendParams} = _ref;
+    let { swiper, extendParams } = _ref;
     extendParams({
       grid: {
         rows: 1,
@@ -10610,8 +10594,8 @@
     let numFullColumns;
 
     const initSlides = (slidesLength) => {
-      const {slidesPerView} = swiper.params;
-      const {rows, fill} = swiper.params.grid;
+      const { slidesPerView } = swiper.params;
+      const { rows, fill } = swiper.params.grid;
       slidesPerRow = slidesNumberEvenToRows / rows;
       numFullColumns = Math.floor(slidesLength / rows);
 
@@ -10630,8 +10614,8 @@
     };
 
     const updateSlide = (i, slide, slidesLength, getDirectionLabel) => {
-      const {slidesPerGroup, spaceBetween} = swiper.params;
-      const {rows, fill} = swiper.params.grid; // Set slides order
+      const { slidesPerGroup, spaceBetween } = swiper.params;
+      const { rows, fill } = swiper.params.grid; // Set slides order
 
       let newSlideOrderIndex;
       let column;
@@ -10644,11 +10628,11 @@
           groupIndex === 0
             ? slidesPerGroup
             : Math.min(
-              Math.ceil(
-                (slidesLength - groupIndex * rows * slidesPerGroup) / rows,
-              ),
-              slidesPerGroup,
-            );
+                Math.ceil(
+                  (slidesLength - groupIndex * rows * slidesPerGroup) / rows,
+                ),
+                slidesPerGroup,
+              );
         row = Math.floor(slideIndexInGroup / columnsInGroup);
         column =
           slideIndexInGroup -
@@ -10686,8 +10670,8 @@
     };
 
     const updateWrapperSize = (slideSize, snapGrid, getDirectionLabel) => {
-      const {spaceBetween, centeredSlides, roundLengths} = swiper.params;
-      const {rows} = swiper.params.grid;
+      const { spaceBetween, centeredSlides, roundLengths } = swiper.params;
+      const { rows } = swiper.params.grid;
       swiper.virtualSize = (slideSize + spaceBetween) * slidesNumberEvenToRows;
       swiper.virtualSize = Math.ceil(swiper.virtualSize / rows) - spaceBetween;
       swiper.$wrapperEl.css({
@@ -10718,7 +10702,7 @@
 
   function appendSlide(slides) {
     const swiper = this;
-    const {$wrapperEl, params} = swiper;
+    const { $wrapperEl, params } = swiper;
 
     if (params.loop) {
       swiper.loopDestroy();
@@ -10743,7 +10727,7 @@
 
   function prependSlide(slides) {
     const swiper = this;
-    const {params, $wrapperEl, activeIndex} = swiper;
+    const { params, $wrapperEl, activeIndex } = swiper;
 
     if (params.loop) {
       swiper.loopDestroy();
@@ -10774,7 +10758,7 @@
 
   function addSlide(index, slides) {
     const swiper = this;
-    const {$wrapperEl, params, activeIndex} = swiper;
+    const { $wrapperEl, params, activeIndex } = swiper;
     let activeIndexBuffer = activeIndex;
 
     if (params.loop) {
@@ -10839,7 +10823,7 @@
 
   function removeSlide(slidesIndexes) {
     const swiper = this;
-    const {params, $wrapperEl, activeIndex} = swiper;
+    const { params, $wrapperEl, activeIndex } = swiper;
     let activeIndexBuffer = activeIndex;
 
     if (params.loop) {
@@ -10895,7 +10879,7 @@
   }
 
   function Manipulation(_ref) {
-    let {swiper} = _ref;
+    let { swiper } = _ref;
     Object.assign(swiper, {
       appendSlide: appendSlide.bind(swiper),
       prependSlide: prependSlide.bind(swiper),
@@ -10964,8 +10948,8 @@
   }
 
   function effectVirtualTransitionEnd(_ref) {
-    let {swiper, duration, transformEl, allSlides} = _ref;
-    const {slides, activeIndex, $wrapperEl} = swiper;
+    let { swiper, duration, transformEl, allSlides } = _ref;
+    const { slides, activeIndex, $wrapperEl } = swiper;
 
     if (swiper.params.virtualTranslate && duration !== 0) {
       let eventTriggered = false;
@@ -10994,7 +10978,7 @@
   }
 
   function EffectFade(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       fadeEffect: {
         crossFade: false,
@@ -11003,7 +10987,7 @@
     });
 
     const setTranslate = () => {
-      const {slides} = swiper;
+      const { slides } = swiper;
       const params = swiper.params.fadeEffect;
 
       for (let i = 0; i < slides.length; i += 1) {
@@ -11031,7 +11015,7 @@
     };
 
     const setTransition = (duration) => {
-      const {transformEl} = swiper.params.fadeEffect;
+      const { transformEl } = swiper.params.fadeEffect;
       const $transitionElements = transformEl
         ? swiper.slides.find(transformEl)
         : swiper.slides;
@@ -11061,7 +11045,7 @@
   }
 
   function EffectCube(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       cubeEffect: {
         slideShadows: true,
@@ -11242,7 +11226,7 @@
     };
 
     const setTransition = (duration) => {
-      const {$el, slides} = swiper;
+      const { $el, slides } = swiper;
       slides
         .transition(duration)
         .find(
@@ -11292,7 +11276,7 @@
   }
 
   function EffectFlip(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       flipEffect: {
         slideShadows: true,
@@ -11302,7 +11286,7 @@
     });
 
     const setTranslate = () => {
-      const {slides, rtlTranslate: rtl} = swiper;
+      const { slides, rtlTranslate: rtl } = swiper;
       const params = swiper.params.flipEffect;
 
       for (let i = 0; i < slides.length; i += 1) {
@@ -11370,7 +11354,7 @@
     };
 
     const setTransition = (duration) => {
-      const {transformEl} = swiper.params.flipEffect;
+      const { transformEl } = swiper.params.flipEffect;
       const $transitionElements = transformEl
         ? swiper.slides.find(transformEl)
         : swiper.slides;
@@ -11405,7 +11389,7 @@
   }
 
   function EffectCoverflow(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       coverflowEffect: {
         rotate: 50,
@@ -11504,7 +11488,7 @@
     };
 
     const setTransition = (duration) => {
-      const {transformEl} = swiper.params.coverflowEffect;
+      const { transformEl } = swiper.params.coverflowEffect;
       const $transitionElements = transformEl
         ? swiper.slides.find(transformEl)
         : swiper.slides;
@@ -11530,7 +11514,7 @@
   }
 
   function EffectCreative(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       creativeEffect: {
         transformEl: null,
@@ -11559,9 +11543,9 @@
     };
 
     const setTranslate = () => {
-      const {slides, $wrapperEl, slidesSizesGrid} = swiper;
+      const { slides, $wrapperEl, slidesSizesGrid } = swiper;
       const params = swiper.params.creativeEffect;
-      const {progressMultiplier: multiplier} = params;
+      const { progressMultiplier: multiplier } = params;
       const isCenteredSlides = swiper.params.centeredSlides;
 
       if (isCenteredSlides) {
@@ -11668,7 +11652,7 @@
     };
 
     const setTransition = (duration) => {
-      const {transformEl} = swiper.params.creativeEffect;
+      const { transformEl } = swiper.params.creativeEffect;
       const $transitionElements = transformEl
         ? swiper.slides.find(transformEl)
         : swiper.slides;
@@ -11699,7 +11683,7 @@
   }
 
   function EffectCards(_ref) {
-    let {swiper, extendParams, on} = _ref;
+    let { swiper, extendParams, on } = _ref;
     extendParams({
       cardsEffect: {
         slideShadows: true,
@@ -11708,9 +11692,9 @@
     });
 
     const setTranslate = () => {
-      const {slides, activeIndex} = swiper;
+      const { slides, activeIndex } = swiper;
       const params = swiper.params.cardsEffect;
-      const {startTranslate, isTouched} = swiper.touchEventsData;
+      const { startTranslate, isTouched } = swiper.touchEventsData;
       const currentTranslate = swiper.translate;
 
       for (let i = 0; i < slides.length; i += 1) {
@@ -11808,7 +11792,7 @@
     };
 
     const setTransition = (duration) => {
-      const {transformEl} = swiper.params.cardsEffect;
+      const { transformEl } = swiper.params.cardsEffect;
       const $transitionElements = transformEl
         ? swiper.slides.find(transformEl)
         : swiper.slides;
