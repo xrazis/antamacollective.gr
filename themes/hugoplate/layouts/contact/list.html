@@ -24,7 +24,7 @@
             <input
               class="form-input"
               id="surname"
-              name="name"
+              name="surname"
               placeholder="Kahlo"
               type="text"/>
           </div>
@@ -64,22 +64,13 @@
   contactForm.addEventListener('submit', event => {
     event.preventDefault();
 
-    const name = document.getElementById('name');
-    const userEmail = document.getElementById('userEmail');
-    const message = document.getElementById('message');
-    const fakeField = document.getElementById('surname');
-    const serverEmail = 'info@antamacollective.gr'
+    const data = new FormData(contactForm);
+    data.set('serverEmail', 'info@antamacollective.gr')
 
     fetch(endpoint, {
       method: "POST",
       mode: "cors",
-      body: {
-        name,
-        userEmail,
-        message,
-        fakeField,
-        serverEmail
-      }
+      body: data,
     }).then(response => {
       console.log(response)
     });
