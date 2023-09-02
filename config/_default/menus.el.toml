@@ -19,7 +19,7 @@ weight = 3
 # footer menu
 [[footer]]
 name = "Αρχική"
-url = "home/"
+url = "/"
 weight = 1
 
 [[footer]]

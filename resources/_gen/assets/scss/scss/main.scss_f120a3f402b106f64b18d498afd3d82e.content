@@ -941,3 +941,10 @@
 
 .search-wrapper .search-result-item {
   @apply p-4; }
+
+.blog-list-image {
+  width: 100%;
+  height: 280px;
+  max-height: 280px;
+  object-fit: cover;
+  object-position: center; }

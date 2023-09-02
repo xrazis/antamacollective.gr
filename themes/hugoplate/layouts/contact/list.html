@@ -1,49 +1,90 @@
 {{ define "main" }}
-  {{ partial "page-header" . }}
+{{ partial "page-header" . }}
 
-
-  <section class="section-sm">
-    <div class="container">
-      <div class="row">
-        <div class="md:col-10 lg:col-6 mx-auto">
-          <form action="{{ site.Params.contact_form_action }}" method="POST">
-            <div class="mb-6">
-              <label class="form-label" for="name">
-                Full Name <span class="text-red-500">*</span>
-              </label>
-              <input
-                class="form-input"
-                id="name"
-                name="name"
-                placeholder="John Doe"
-                type="text" />
-            </div>
-            <div class="mb-6">
-              <label class="form-label" for="email">
-                Working Mail <span class="text-red-500">*</span>
-              </label>
-              <input
-                class="form-input"
-                id="email"
-                name="email"
-                placeholder="john.doe@email.com"
-                type="email" />
-            </div>
-            <div class="mb-6">
-              <label class="form-label" for="message">
-                Anything else? <span class="text-red-500">*</span>
-              </label>
-              <textarea
-                class="form-input"
-                id="message"
-                name="message"
-                placeholder="Message goes here..."
-                rows="8"></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Αποστολή</button>
-          </form>
-        </div>
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="md:col-10 lg:col-6 mx-auto">
+        <form action="#" id="contactForm">
+          <div class="mb-6">
+            <label class="form-label" for="name">
+              Όνομα <span class="text-red-500">*</span>
+            </label>
+            <input
+              class="form-input"
+              id="name"
+              name="name"
+              placeholder="Frida Kahlo"
+              type="text"/>
+          </div>
+          <div class="mb-6" style="display: none">
+            <label class="form-label" for="surname">
+              Επώνυμο <span class="text-red-500">*</span>
+            </label>
+            <input
+              class="form-input"
+              id="surname"
+              name="name"
+              placeholder="Kahlo"
+              type="text"/>
+          </div>
+          <div class="mb-6">
+            <label class="form-label" for="userEmail">
+              Email <span class="text-red-500">*</span>
+            </label>
+            <input
+              class="form-input"
+              id="userEmail"
+              name="email"
+              placeholder="frida@kahlo.mx"
+              type="email"/>
+          </div>
+          <div class="mb-6">
+            <label class="form-label" for="message">
+              Μήνυμα <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              class="form-input"
+              id="message"
+              name="message"
+              placeholder="“I don't paint dreams or nightmares, I paint my own reality.”"
+              rows="8"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Αποστολή</button>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<script>
+  const endpoint = '{{ site.Params.contact_form_action }}';
+  const contactForm = document.getElementById('contactForm');
+
+  contactForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const name = document.getElementById('name');
+    const userEmail = document.getElementById('userEmail');
+    const message = document.getElementById('message');
+    const fakeField = document.getElementById('surname');
+    const serverEmail = 'info@antamacollective.gr'
+
+    fetch(endpoint, {
+      method: "POST",
+      mode: "cors",
+      body: {
+        name,
+        userEmail,
+        message,
+        fakeField,
+        serverEmail
+      }
+    }).then(response => {
+      console.log(response)
+    });
+
+  });
+
+</script>
 {{ end }}

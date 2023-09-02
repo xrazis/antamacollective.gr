@@ -1,7 +1,7 @@
 <div class="bg-body ">
   {{ $image:= .Params.image }}
   {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mb-6 w-full rounded") }}
+    {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mb-6 w-full rounded blog-list-image") }}
   {{ end }}
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">

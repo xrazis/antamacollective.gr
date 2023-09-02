@@ -1,1 +1,9 @@
 // Add your own custom styles here
+
+.blog-list-image {
+  width: 100%;
+  height: 280px;
+  max-height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
