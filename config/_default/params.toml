@@ -20,7 +20,7 @@ theme_default = "light" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
-contact_form_action = "https://antamacollective.gr/send-email"
+contact_form_action = "https://form-endpoint.xrazis.com/send-email"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright

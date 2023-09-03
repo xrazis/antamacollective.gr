@@ -84,9 +84,9 @@
       body: data,
     }).then(response => {
       if (response.status === 200) {
-        document.getElementById('successful-email').removeClass('hidden');
+        document.getElementById('successful-email').classList.remove('hidden');
       } else {
-        document.getElementById('failed-email').removeClass('hidden');
+        document.getElementById('failed-email').classList.remove('hidden');
       }
     });
 
