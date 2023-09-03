@@ -52,19 +52,19 @@
           </div>
           <button class="btn btn-primary" type="submit">Αποστολή</button>
         </form>
-
         <div id="successful-email" class="mt-4 hidden">
-          {{< notice "tip" >}}
-          Το email στάλθηκε με επιτυχία!
-          {{< /notice >}}
+          <div class="notice tip">
+            <div class="notice-head"><p>Το email στάλθηκε με επιτυχία!</p></div>
+          </div>
         </div>
         <div id="failed-email" class="mt-4 hidden">
-          {{< warning "tip" >}}
-          Η αποστολή του email δεν ήταν δυνατή!
-          {{< /warning >}}
+          <div class="notice warning">
+            <div class="notice-head"><p>Η αποστολή του email δεν ήταν δυνατή!</p></div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 
