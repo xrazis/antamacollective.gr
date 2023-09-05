@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="md:col-10 lg:col-6 mx-auto">
-        <form action="#" id="contactForm">
+        <form id="contactForm">
           <div class="mb-6">
             <label class="form-label" for="name">
               Όνομα <span class="text-red-500">*</span>
@@ -50,7 +50,7 @@
               placeholder="“I don't paint dreams or nightmares, I paint my own reality.”"
               rows="8"></textarea>
           </div>
-          <button class="btn btn-primary" type="submit">Αποστολή</button>
+          <button id="submitterButton" class="btn btn-primary">Αποστολή</button>
         </form>
         <div id="successful-email" class="mt-4 hidden">
           <div class="notice tip">
@@ -65,18 +65,19 @@
       </div>
     </div>
   </div>
-  </div>
 </section>
 
 <script>
   const endpoint = '{{ site.Params.contact_form_action }}';
   const contactForm = document.getElementById('contactForm');
+  const submitter = document.getElementById('submitterButton');
 
   contactForm.addEventListener('submit', event => {
     event.preventDefault();
 
-    const data = new FormData(contactForm);
-    data.set('serverEmail', 'info@antamacollective.gr')
+    const formData = new FormData(contactForm, submitter);
+    formData.set('serverEmail', 'info@antamacollective.gr');
+    const data = new URLSearchParams(formData);
 
     fetch(endpoint, {
       method: "POST",
@@ -89,8 +90,6 @@
         document.getElementById('failed-email').classList.remove('hidden');
       }
     });
-
   });
-
 </script>
 {{ end }}
