@@ -12,5 +12,5 @@ So we believe that the time has come to join forces and co-shape our society.
 # Contact
 
 - Email: info@antamacollective.gr
-- Facebook: https://www.facebook.com/profile.php?id=100090946913613
-- Instagram: https://www.instagram.com/antama.2023/
+- Facebook: https://www.facebook.com/antamacollective
+- Instagram: https://www.instagram.com/antama_collective
