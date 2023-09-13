@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Δολοφονία on Antama Collective</title><link>/tags/%CE%B4%CE%BF%CE%BB%CE%BF%CF%86%CE%BF%CE%BD%CE%AF%CE%B1/</link><description>Recent content in Δολοφονία on Antama Collective</description><generator>Hugo -- gohugo.io</generator><language>el</language><lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0300</lastBuildDate><atom:link href="/tags/%CE%B4%CE%BF%CE%BB%CE%BF%CF%86%CE%BF%CE%BD%CE%AF%CE%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>‘’ Στην εποχή των τεράτων. ‘’</title><link>/blog/20230906/</link><pubDate>Tue, 06 Sep 2022 00:00:00 +0300</pubDate><guid>/blog/20230906/</guid><description>‘’Ο παλιός κόσμος πεθαίνει και ο νέος πασχίζει να γεννηθεί. Τώρα είναι η εποχή των τεράτων.’’
-Antonio Gramsci Διαβάζοντας την είδηση για την δολοφονία του 36χρονου Αντώνη , την στιγμή που προσπαθούσε να επιβιβαστεί στο πλοίο της γραμμής για Κρήτη στο λιμάνι του Πειραιά , από εργαζόμενους στο πλοίο Blue Horizon , το πρώτο πράγμα που μου ήρθε στο μυαλό ήταν η παραπάνω φράση του Antonio Gramsci.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Δολοφονία on Antama Collective</title>
+    <link>/tags/%CE%B4%CE%BF%CE%BB%CE%BF%CF%86%CE%BF%CE%BD%CE%AF%CE%B1/</link>
+    <description>Recent content in Δολοφονία on Antama Collective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>el</language>
+    <lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0300</lastBuildDate><atom:link href="/tags/%CE%B4%CE%BF%CE%BB%CE%BF%CF%86%CE%BF%CE%BD%CE%AF%CE%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>‘’ Στην εποχή των τεράτων. ‘’</title>
+      <link>/blog/20230906/</link>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 +0300</pubDate>
+      
+      <guid>/blog/20230906/</guid>
+      <description>‘’Ο παλιός κόσμος πεθαίνει και ο νέος πασχίζει να γεννηθεί. Τώρα είναι η εποχή των τεράτων.’’
+Antonio Gramsci Διαβάζοντας την είδηση για την δολοφονία του 36χρονου Αντώνη , την στιγμή που προσπαθούσε να επιβιβαστεί στο πλοίο της γραμμής για Κρήτη στο λιμάνι του Πειραιά , από εργαζόμενους στο πλοίο Blue Horizon , το πρώτο πράγμα που μου ήρθε στο μυαλό ήταν η παραπάνω φράση του Antonio Gramsci.</description>
+    </item>
+    
+  </channel>
+</rss>

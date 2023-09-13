@@ -1,2 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ζώα on Antama Collective</title><link>/tags/%CE%B6%CF%8E%CE%B1/</link><description>Recent content in Ζώα on Antama Collective</description><generator>Hugo -- gohugo.io</generator><language>el</language><lastBuildDate>Sun, 03 Jul 2022 00:00:00 +0300</lastBuildDate><atom:link href="/tags/%CE%B6%CF%8E%CE%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>Μέδουσες του Αρκτικού Ωκεανού</title><link>/blog/20230703/</link><pubDate>Sun, 03 Jul 2022 00:00:00 +0300</pubDate><guid>/blog/20230703/</guid><description>Οι μέδουσες είναι θαλάσσια ασπόνδυλα (κνιδόζωα) της τάξης σκυφόζωα. Πρόκειται για πλαγκτονικούς οργανισμούς, οι οποίοι απαντώνται σε όλες τις θάλασσες του κόσμου.</description></item><item><title>Madame Yevonde</title><link>/blog/20230630/</link><pubDate>Thu, 30 Jun 2022 00:00:00 +0300</pubDate><guid>/blog/20230630/</guid><description>Η Yevonde Philone Middleton (5 Ιανουαρίου 1893 – 22 Δεκεμβρίου 1975) ήταν Αγγλίδα φωτογράφος, η οποία πρωτοστάτησε στη χρήση του χρώματος στις φωτογραφίες πορτρέτων.</description></item><item><title>Το μεταναστευτικό ταξίδι της πεταλούδας</title><link>/blog/20230509/</link><pubDate>Mon, 09 May 2022 00:00:00 +0300</pubDate><guid>/blog/20230509/</guid><description>Πολλά είδη ζωντανών οργανισμών μεταναστεύουν κάθε χρόνο, κυρίως το φθινόπωρο και την άνοιξη, για να ανταπεξέλθουν τις κλιματικές συνθήκες.
-Ένα από αυτά είναι και οι πεταλούδες, έντομα της τάξης των Λεπιδόπτερων που ανήκουν στο φύλλο των αρθρόποδων, και ο πληθυσμός τους υπερβαίνει τον αριθμό των 100.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ζώα on Antama Collective</title>
+    <link>/tags/%CE%B6%CF%8E%CE%B1/</link>
+    <description>Recent content in Ζώα on Antama Collective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>el</language>
+    <lastBuildDate>Sun, 03 Jul 2022 00:00:00 +0300</lastBuildDate><atom:link href="/tags/%CE%B6%CF%8E%CE%B1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Μέδουσες του Αρκτικού Ωκεανού</title>
+      <link>/blog/20230703/</link>
+      <pubDate>Sun, 03 Jul 2022 00:00:00 +0300</pubDate>
+      
+      <guid>/blog/20230703/</guid>
+      <description>Οι μέδουσες είναι θαλάσσια ασπόνδυλα (κνιδόζωα) της τάξης σκυφόζωα. Πρόκειται για πλαγκτονικούς οργανισμούς, οι οποίοι απαντώνται σε όλες τις θάλασσες του κόσμου.</description>
+    </item>
+    
+    <item>
+      <title>Madame Yevonde</title>
+      <link>/blog/20230630/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0300</pubDate>
+      
+      <guid>/blog/20230630/</guid>
+      <description>Η Yevonde Philone Middleton (5 Ιανουαρίου 1893 – 22 Δεκεμβρίου 1975) ήταν Αγγλίδα φωτογράφος, η οποία πρωτοστάτησε στη χρήση του χρώματος στις φωτογραφίες πορτρέτων.</description>
+    </item>
+    
+    <item>
+      <title>Το μεταναστευτικό ταξίδι της πεταλούδας</title>
+      <link>/blog/20230509/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0300</pubDate>
+      
+      <guid>/blog/20230509/</guid>
+      <description>Πολλά είδη ζωντανών οργανισμών μεταναστεύουν κάθε χρόνο, κυρίως το φθινόπωρο και την άνοιξη, για να ανταπεξέλθουν τις κλιματικές συνθήκες.
+Ένα από αυτά είναι και οι πεταλούδες, έντομα της τάξης των Λεπιδόπτερων που ανήκουν στο φύλλο των αρθρόποδων, και ο πληθυσμός τους υπερβαίνει τον αριθμό των 100.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,56 @@
-{"name":"Antama Collective","short_name":"Antama Collective","lang":"el","display":"fullscreen","orientation":"portrait","start_url":"/?utm_source=web_app_manifest","background_color":"#fff","theme_color":"#000","icons":[{"src":"/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_48x48_resize_lanczos_3.png","sizes":"48x48","type":"image/png"},{"src":"/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_72x72_resize_lanczos_3.png","sizes":"72x72","type":"image/png"},{"src":"/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_96x96_resize_lanczos_3.png","sizes":"96x96","type":"image/png"},{"src":"/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_144x144_resize_lanczos_3.png","sizes":"144x144","type":"image/png"},{"src":"/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_192x192_resize_lanczos_3.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},{"src":"/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_512x512_resize_lanczos_3.png","sizes":"512x512","type":"image/png"}]}
+{
+  "name": "Antama Collective",
+  "short_name": "Antama Collective",
+  "lang": "el",
+  "display": "fullscreen",
+  "orientation" : "portrait",
+  "start_url": "/?utm_source=web_app_manifest",
+  "background_color": "#fff",
+  "theme_color": "#000",
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  "icons": [
+    {
+      "src": "/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_48x48_resize_lanczos_3.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_72x72_resize_lanczos_3.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_96x96_resize_lanczos_3.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_144x144_resize_lanczos_3.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_192x192_resize_lanczos_3.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_512x512_resize_lanczos_3.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+  
+  
+}
