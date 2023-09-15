@@ -11,9 +11,6 @@
     <loc>/tags/</loc>
     <lastmod>2022-09-15T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>/blog/20230915/</loc>
-    <lastmod>2022-09-15T00:00:00+03:00</lastmod>
-  </url><url>
     <loc>/tags/%CE%B3%CE%B5%CF%89%CF%81%CE%B3%CE%AF%CE%B1/</loc>
     <lastmod>2022-09-15T00:00:00+03:00</lastmod>
   </url><url>
@@ -33,6 +30,9 @@
     <lastmod>2022-09-15T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/categories/%CF%80%CE%B5%CF%81%CE%B9%CE%B2%CE%AC%CE%BB%CE%BB%CE%BF%CE%BD/</loc>
+    <lastmod>2022-09-15T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/blog/20230915/</loc>
     <lastmod>2022-09-15T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20230913/</loc>
