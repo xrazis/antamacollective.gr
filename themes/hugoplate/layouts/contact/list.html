@@ -39,7 +39,7 @@
               placeholder="“I don't paint dreams or nightmares, I paint my own reality.”"
               rows="8"></textarea>
           </div>
-          <button id="submitterButton" class="btn btn-primary">Αποστολή</button>
+          <button id="submitterButton" class="btn btn-primary disabled:opacity-30">Αποστολή</button>
         </form>
         <div id="successful-email" class="mt-4 hidden">
           <div class="notice tip">
@@ -76,6 +76,7 @@
       } else {
         document.getElementById('failed-email').classList.remove('hidden');
       }
+      document.getElementById('submitterButton').setAttribute('disabled', '');
     });
   });
 </script>

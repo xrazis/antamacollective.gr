@@ -14793,6 +14793,10 @@ input#nav-toggle:checked ~ #nav-menu {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.disabled\:opacity-30:disabled {
+  opacity: 0.3;
+}
+
 @media (min-width: 540px) {
 
   .sm\:block {

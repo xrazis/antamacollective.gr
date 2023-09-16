@@ -238,8 +238,8 @@
 
 
 <link
-  href="/css/style.min.1232f44a227e397d8c3b60c2dca7882205f9c86362357bbb51ccd93c4c4d4b67.css"
-  integrity="sha256-EjL0SiJ+OX2MO2DC3KeIIgX5yGNiNXu7UczZPExNS2c="
+  href="/css/style.min.3984b718a84570e33621aebb4342cf9228bff400f268f9c8128bc2a89906b86d.css"
+  integrity="sha256-OYS3GKhFcOM2Ia67Q0LPkii/9ADyaPnIEovCqJkGuG0="
   rel="stylesheet" />
 
   </head>
@@ -620,7 +620,7 @@
               placeholder="“I don't paint dreams or nightmares, I paint my own reality.”"
               rows="8"></textarea>
           </div>
-          <button id="submitterButton" class="btn btn-primary">Αποστολή</button>
+          <button id="submitterButton" class="btn btn-primary disabled:opacity-30">Αποστολή</button>
         </form>
         <div id="successful-email" class="mt-4 hidden">
           <div class="notice tip">
@@ -657,6 +657,7 @@
       } else {
         document.getElementById('failed-email').classList.remove('hidden');
       }
+      document.getElementById('submitterButton').setAttribute('disabled', '');
     });
   });
 </script>
