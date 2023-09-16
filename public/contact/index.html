@@ -638,16 +638,14 @@
 </section>
 
 <script>
-  const endpoint = 'http:\/\/form-endpoint.xrazis.com\/send-email';
+  const endpoint = 'https:\/\/form-endpoint.xrazis.com\/send-email';
   const contactForm = document.getElementById('contactForm');
-  const submitter = document.getElementById('submitterButton');
 
   contactForm.addEventListener('submit', event => {
     event.preventDefault();
 
-    const formData = new FormData(contactForm, submitter);
-    formData.set('serverEmail', 'info@antamacollective.gr');
-    const data = new URLSearchParams(formData);
+    const data = new FormData(contactForm);
+    data.set('serverEmail', 'info@antamacollective.gr');
 
     fetch(endpoint, {
       method: "POST",
