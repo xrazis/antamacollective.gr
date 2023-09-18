@@ -1,9 +1,9 @@
 ---
 # Banner
 banner:
-  title: "Συλλογικότητα Αντάμα"
+  title: "αντάμα"
   content: "Είμαστε μια αυτοοργανωμένη συλλογικότητα η οποία δημιουργήθηκε με σκοπό να αναδείξει την ελευθερία της έκφρασης και να προσεγγίσει κοινωνικά θέματα τοπικού -και όχι μόνο- χαρακτήρα, μέσω  πολύμορφων δράσεων."
-  image: "/images/cover.jpg"
+  image: "/images/cover.png"
   button:
     enable: false
     label: "Διάβασε περισσότερα"
@@ -11,27 +11,27 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
-    image: "/images/first-section.jpg"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-    bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+  - title: "Σεβασμός - Συμμετοχή - Συνέπεια"
+    image: "/images/first-section.png"
+    content: "Όλες μας οι δράσεις συναποφασίζονται μέσω της διαδικασίας της συνέλευσης. Σε μια εποχή που η αλληλεγγύη δεν θεωρείται δεδομένη, επιλέγουμε να δράσουμε συλλογικά και να αναπτύξουμε ζώνες ελευθερίας και δημιουργικής έκφρασης."
+    #    bulletpoints:
+    #      - "10+ Pre-build pages"
+    #      - "95+ Google Pagespeed Score"
+    #      - "Build with Hugo and TailwindCSS for easy and customizable styling"
+    #      - "Fully responsive on all devices"
+    #      - "SEO-optimized for better search engine rankings"
+    #      - "**Open-source and free** for personal and commercial use"
     button:
       enable: false
       label: "Get Started Now"
       link: "#"
 
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/second-section.jpg"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+  - title: "Έλα μαζί μας, πάμε"
+    image: "/images/second-section.png"
+    content: "Σκοπός μας είναι η συμπερίληψη όλων των κοινωνικών ομάδων στη δράση μας και η ευαισθητοποίηση τους. Είμαστε ενάντια σε κάθε μορφή κοινωνικού διαχωρισμού. Πιστεύουμε λοιπόν ότι έχει έρθει η ώρα να ενώσουμε δυνάμεις και να συνδιαμορφώσουμε την κοινωνία μας αντάμα."
     button:
       enable: true
-      label: "Ελα σε επαφή!"
+      label: "Επικοινώνησε"
       link: "/contact"
 
 ---

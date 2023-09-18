@@ -14739,11 +14739,6 @@ input#nav-toggle:checked ~ #nav-menu {
     width: 33.333333333333336%;
   }
 
-  .lg\:col-5 {
-    flex: 0 0 auto;
-    width: 41.66666666666667%;
-  }
-
   .lg\:col-6 {
     flex: 0 0 auto;
     width: 50%;
