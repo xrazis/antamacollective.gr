@@ -12699,10 +12699,6 @@ blockquote > p {
   padding-left: calc(var(--bs-gutter-x) / 2);
   margin-top: var(--bs-gutter-y);
 }
-.col-12 {
-  flex: 0 0 auto;
-  width: 100%;
-}
 .g-5, .gx-5 {
   --bs-gutter-x: 3rem;
 }
