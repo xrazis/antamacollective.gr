@@ -3,7 +3,7 @@
 banner:
   title: "Συλλογικότητα Αντάμα"
   content: "Είμαστε μια αυτοοργανωμένη συλλογικότητα η οποία δημιουργήθηκε με σκοπό να αναδείξει την ελευθερία της έκφρασης και να προσεγγίσει κοινωνικά θέματα τοπικού -και όχι μόνο- χαρακτήρα, μέσω  πολύμορφων δράσεων."
-  image: "/images/banner.png"
+  image: "/images/cover.jpg"
   button:
     enable: false
     label: "Διάβασε περισσότερα"
@@ -12,7 +12,7 @@ banner:
 # Features
 features:
   - title: "What's Included in Hugoplate"
-    image: "/images/service-1.png"
+    image: "/images/first-section.jpg"
     content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
     bulletpoints:
       - "10+ Pre-build pages"
@@ -27,15 +27,11 @@ features:
       link: "#"
 
   - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
+    image: "/images/second-section.jpg"
     content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      label: "Ελα σε επαφή!"
+      link: "/contact"
 
 ---
