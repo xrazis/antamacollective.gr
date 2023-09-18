@@ -41,9 +41,6 @@
     <loc>/blog/20230913/</loc>
     <lastmod>2022-09-13T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>/tags/%CF%84%CE%AD%CF%87%CE%BD%CE%B7/</loc>
-    <lastmod>2022-09-13T00:00:00+03:00</lastmod>
-  </url><url>
     <loc>/blog/20230911/</loc>
     <lastmod>2022-09-11T00:00:00+03:00</lastmod>
   </url><url>
@@ -133,6 +130,9 @@
   </url><url>
     <loc>/blog/20230628/</loc>
     <lastmod>2022-06-28T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/tags/%CE%AC%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF%CE%B9/</loc>
+    <lastmod>2022-06-23T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20230623/</loc>
     <lastmod>2022-06-23T00:00:00+03:00</lastmod>
@@ -231,6 +231,9 @@
     <lastmod>2022-04-09T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20230407/</loc>
+    <lastmod>2022-04-07T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/tags/%CF%84%CE%AD%CF%87%CE%BD%CE%B7/</loc>
     <lastmod>2022-04-07T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20230403/</loc>
