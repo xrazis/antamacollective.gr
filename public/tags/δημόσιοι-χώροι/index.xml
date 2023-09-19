@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Δημόσιοι Χώροι on Antama Collective</title>
+    <title>Δημόσιοι χώροι on Antama Collective</title>
     <link>/tags/%CE%B4%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%BF%CE%B9-%CF%87%CF%8E%CF%81%CE%BF%CE%B9/</link>
-    <description>Recent content in Δημόσιοι Χώροι on Antama Collective</description>
+    <description>Recent content in Δημόσιοι χώροι on Antama Collective</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>el</language>
     <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0300</lastBuildDate><atom:link href="/tags/%CE%B4%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%BF%CE%B9-%CF%87%CF%8E%CF%81%CE%BF%CE%B9/index.xml" rel="self" type="application/rss+xml" />
@@ -23,6 +23,15 @@
       
       <guid>/blog/20230913/</guid>
       <description>Σε πολλές πόλεις, τα ιστορικά κτήρια διατηρούνται με προσεγμένο τρόπο και αναδεικνύονται μέσα από τη λειτουργική τους αξιοποίηση. Αυτή η πρακτική συνδυάζει με επιτυχία το πλούσιο ιστορικό παρελθόν με τις σύγχρονες ανάγκες.</description>
+    </item>
+    
+    <item>
+      <title>Ωδή στα δάση μας - Η χαμένη Δαδιά</title>
+      <link>/blog/20230828/</link>
+      <pubDate>Wed, 24 Aug 2022 00:00:00 +0300</pubDate>
+      
+      <guid>/blog/20230828/</guid>
+      <description>Για αρχή να ξεκαθαρίσουμε ότι όλα τα δάση είναι σπουδαία. Από τα πιο μικρά μέχρι τις αχανείς εκτάσεις. Κάθε δέντρο είναι σημαντικό.</description>
     </item>
     
   </channel>
