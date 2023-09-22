@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Hugo build" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="hugo" />
+    <option name="SCRIPT_TEXT" value="rm -rf /public &amp;&amp; hugo" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="hugo" />
     <option name="SCRIPT_OPTIONS" value="" />
