@@ -3,33 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2023-09-27T00:00:00+03:00</lastmod>
+    <lastmod>2023-09-29T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2023-09-27T00:00:00+03:00</lastmod>
+    <lastmod>2023-09-29T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-09-29T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2023-09-29T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/categories/%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AC/</loc>
+    <lastmod>2023-09-29T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/categories/%CF%84%CE%AD%CF%87%CE%BD%CE%B7/</loc>
+    <lastmod>2023-09-29T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/blog/20230929/</loc>
+    <lastmod>2023-09-29T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/tags/%CF%84%CE%B5%CF%87%CE%BD%CE%B7%CF%84%CE%AE-%CE%BD%CE%BF%CE%B7%CE%BC%CE%BF%CF%83%CF%8D%CE%BD%CE%B7/</loc>
+    <lastmod>2023-09-29T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20230927/</loc>
     <lastmod>2023-09-27T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-09-27T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2023-09-27T00:00:00+03:00</lastmod>
-  </url><url>
     <loc>/tags/%CE%B4%CE%B9%CE%BA%CE%B1%CE%B9%CF%8E%CE%BC%CE%B1%CF%84%CE%B1/</loc>
-    <lastmod>2023-09-27T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/categories/%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AC/</loc>
     <lastmod>2023-09-27T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/tags/%CE%AC%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF%CE%B9/</loc>
     <lastmod>2023-09-22T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20230922/</loc>
-    <lastmod>2023-09-22T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/categories/%CF%84%CE%AD%CF%87%CE%BD%CE%B7/</loc>
     <lastmod>2023-09-22T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/tags/%CE%B4%CE%BF%CE%BB%CE%BF%CF%86%CE%BF%CE%BD%CE%AF%CE%B1/</loc>
