@@ -3,21 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2023-11-08T00:00:00+02:00</lastmod>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2023-11-08T00:00:00+02:00</lastmod>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2023-11-08T00:00:00+02:00</lastmod>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
   </url><url>
-    <loc>/categories/%CE%B1%CE%BD%CE%B1%CE%BA%CE%BF%CE%B9%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82/</loc>
-    <lastmod>2023-11-08T00:00:00+02:00</lastmod>
+    <loc>/tags/%CE%AC%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF%CE%B9/</loc>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2023-11-08T00:00:00+02:00</lastmod>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/tags/%CE%B4%CE%B9%CE%BA%CE%B1%CE%B9%CF%8E%CE%BC%CE%B1%CF%84%CE%B1/</loc>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/categories/%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AC/</loc>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/tags/%CF%80%CE%BF%CE%AF%CE%B7%CF%83%CE%B7/</loc>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/blog/20231117/</loc>
+    <lastmod>2023-11-17T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/categories/%CE%B1%CE%BD%CE%B1%CE%BA%CE%BF%CE%B9%CE%BD%CF%8E%CF%83%CE%B5%CE%B9%CF%82/</loc>
     <lastmod>2023-11-08T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/tags/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/</loc>
@@ -27,9 +39,6 @@
     <lastmod>2023-11-08T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/tags/%CE%B4%CE%B7%CE%BC%CF%8C%CF%83%CE%B9%CE%BF%CE%B9-%CF%87%CF%8E%CF%81%CE%BF%CE%B9/</loc>
-    <lastmod>2023-11-06T00:00:00+02:00</lastmod>
-  </url><url>
-    <loc>/categories/%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AC/</loc>
     <lastmod>2023-11-06T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/blog/20231106/</loc>
@@ -46,9 +55,6 @@
   </url><url>
     <loc>/tags/%CF%80%CF%8C%CE%BB%CE%B5%CE%BC%CE%BF%CF%82/</loc>
     <lastmod>2023-10-28T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/tags/%CE%AC%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF%CE%B9/</loc>
-    <lastmod>2023-10-26T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20231026/</loc>
     <lastmod>2023-10-26T00:00:00+03:00</lastmod>
@@ -117,9 +123,6 @@
     <lastmod>2023-09-13T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20230911/</loc>
-    <lastmod>2023-09-11T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/tags/%CF%80%CE%BF%CE%AF%CE%B7%CF%83%CE%B7/</loc>
     <lastmod>2023-09-11T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20230906/</loc>
