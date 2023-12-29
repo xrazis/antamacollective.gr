@@ -3,18 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2023-12-20T00:00:00+02:00</lastmod>
+    <lastmod>2023-12-28T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2023-12-20T00:00:00+02:00</lastmod>
+    <lastmod>2023-12-28T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2023-12-20T00:00:00+02:00</lastmod>
-  </url><url>
-    <loc>/blog/20231220/</loc>
-    <lastmod>2023-12-20T00:00:00+02:00</lastmod>
+    <lastmod>2023-12-28T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/blog/</loc>
+    <lastmod>2023-12-28T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/blog/20231228/</loc>
+    <lastmod>2023-12-28T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/categories/%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AC/</loc>
+    <lastmod>2023-12-28T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/tags/%CE%BA%CF%81%CE%B1%CF%84%CE%B9%CE%BA%CE%AE-%CE%B1%CE%BD%CE%B5%CF%80%CE%AC%CF%81%CE%BA%CE%B5%CE%B9%CE%B1/</loc>
+    <lastmod>2023-12-28T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/tags/%CF%83%CF%84%CE%AD%CE%B3%CE%B1%CF%83%CE%B7/</loc>
+    <lastmod>2023-12-28T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>/blog/20231220/</loc>
     <lastmod>2023-12-20T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/categories/%CE%B4%CF%81%CE%AC%CF%83%CE%B5%CE%B9%CF%82/</loc>
@@ -27,12 +39,6 @@
     <lastmod>2023-12-06T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/tags/%CE%B4%CE%BF%CE%BB%CE%BF%CF%86%CE%BF%CE%BD%CE%AF%CE%B1/</loc>
-    <lastmod>2023-12-06T00:00:00+02:00</lastmod>
-  </url><url>
-    <loc>/categories/%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AC/</loc>
-    <lastmod>2023-12-06T00:00:00+02:00</lastmod>
-  </url><url>
-    <loc>/tags/%CE%BA%CF%81%CE%B1%CF%84%CE%B9%CE%BA%CE%AE-%CE%B1%CE%BD%CE%B5%CF%80%CE%AC%CF%81%CE%BA%CE%B5%CE%B9%CE%B1/</loc>
     <lastmod>2023-12-06T00:00:00+02:00</lastmod>
   </url><url>
     <loc>/blog/20231205/</loc>
