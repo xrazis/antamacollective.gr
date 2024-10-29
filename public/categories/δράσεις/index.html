@@ -30,11 +30,11 @@
 
 
 
-<link rel="shortcut icon" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_16x0_resize_lanczos_3.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_180x0_resize_lanczos_3.png">
+<link rel="shortcut icon" href="/images/favicon_hu7424989048623988921.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu7424989048623988921.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu5893180584025630723.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu7424989048623988921.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu8390472157669192516.png">
 
 
 
@@ -75,7 +75,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.128.0">
+
+
+
+
+
+<title>Antama Collective</title>
 
 
 
@@ -90,12 +95,17 @@
 
 
 
-  <meta name="keywords" content="Antama Collective, Blog" />
+
+  <meta
+    name="keywords"
+    content="Antama Collective, Blog" />
 
 
 
 
-<meta name="description" content="Website for the Antama Collective located in Zakynthos" />
+<meta
+  name="description"
+  content="Website for the Antama Collective located in Zakynthos" />
 
 
 
@@ -105,13 +115,6 @@
 
 
 
-  
-  
-
-
-
-
-
 
   
 
@@ -136,22 +139,25 @@
   
   
 
+
   
 
 
 
 
 
-<meta property="og:title" content="Δράσεις" />
+<meta property="og:title" content="Antama Collective" />
 <meta property="og:description" content="Website for the Antama Collective located in Zakynthos" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/categories/%CE%B4%CF%81%CE%AC%CF%83%CE%B5%CE%B9%CF%82/" />
 
 
-<meta name="twitter:title" content="Δράσεις" />
+<meta name="twitter:title" content="Antama Collective" />
 <meta name="twitter:description" content="Website for the Antama Collective located in Zakynthos" />
 
 
+
+  <meta name="twitter:creator" content="@Antama Collective" />
 
 
 
@@ -165,8 +171,8 @@
 <script>
   let indexURL = "/searchindex.json";
   let includeSectionsInSearch = ["blog"];
-  let no_results_for = "0 results for";
-  let empty_search_results_placeholder = "";
+  let search_no_results = "0 results for";
+  let search_initial_message = "";
 </script>
 
 
@@ -237,8 +243,8 @@
 
 
 <link
-  href="/css/style.min.f2abe538d4e8d23d156967d5f816d3ef78ab53d58b9be38f816d1e826c50152f.css"
-  integrity="sha256-8qvlONTo0j0VaWfV+BbT73irU9WLm+OPgW0egmxQFS8="
+  href="/css/style.min.15542b6549cdaf16c7a6e2e3e46839170123651fea04610b03224367e7125ea2.css"
+  integrity="sha256-FVQrZUnNrxbHpuLj5Gg5FwEjZR/qBGELAyJDZ+cSXqI="
   rel="stylesheet" />
 
   </head>
@@ -324,9 +330,9 @@
       class="img"
       width="70"
       height="auto"
-      src="/images/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_q90_h2_lanczos_3.webp"
+      src="/images/antama_black_mermugkia_hu11997741204530923746.webp"
       alt="Antama Collective"
-      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_lanczos_3.png'" />
+      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu15565378283504272735.png'" />
   
   
 
@@ -427,16 +433,17 @@
 
   
     <div
-      class="search-wrapper search-modal "
-      data-image="true"
-      data-description="true"
-      data-tags="true"
-      data-categories="true"
-      tabindex="-1"
+      class="search-modal "
       aria-hidden="true"
       style="--color-primary: #121212">
-      <div class="search-wrapper-content">
-        <div class="search-input-body">
+      <div data-target="close-search-modal" class="search-modal-overlay"></div>
+      <div
+        class="search-wrapper"
+        data-image="true"
+        data-description="true"
+        data-tags="true"
+        data-categories="true">
+        <div class="search-wrapper-header">
           <label for="search-modal-input" style="margin-top:-1px">
             <span class="sr-only">search icon</span>
             <svg
@@ -484,7 +491,6 @@
                 width="14"
                 height="14"
                 fill="currentColor"
-                style="margin-top:-2px;"
                 viewBox="0 0 16 16">
                 <path
                   d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
@@ -528,6 +534,7 @@
       </div>
     </div>
   
+
 
 
 
@@ -611,6 +618,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -661,27 +672,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20240511-01_hu6ecd042890c83ff3a072a602cb3e63ac_2931521_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240511-01_hu7355988606137358531.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20240511-01_hu6ecd042890c83ff3a072a602cb3e63ac_2931521_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240511-01_hu9733801679089685453.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20240511-01_hu6ecd042890c83ff3a072a602cb3e63ac_2931521_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240511-01_hu5252887975464454796.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20240511-01_hu6ecd042890c83ff3a072a602cb3e63ac_2931521_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240511-01_hu10696646516742428556.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20240511-01_hu6ecd042890c83ff3a072a602cb3e63ac_2931521_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20240511-01_hu15677487548336318433.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Πρώτα γενέθλια"
             width="1080"
@@ -716,7 +727,9 @@
       
     </li>
   </ul>
-  <p class="mb-6">Στις 28 Απρίλη πραγματοποιήσαμε την εκδήλωση μας στο κηποθέατρο του Αυριακού με στόχο να γιορτάσουμε τον πρώτο χρόνο της αντάμωσης μας.</p>
+  <p class="mb-6"><p>Στις 28 Απρίλη πραγματοποιήσαμε την εκδήλωση μας στο κηποθέατρο του Αυριακού με στόχο να γιορτάσουμε τον πρώτο χρόνο της
+αντάμωσης μας. Ένας χρόνος αντάμα λοιπόν με εκδηλώσεις, προβολές ντοκιμαντέρ, συζητήσεις, διαμαρτυρίες, διεκδικήσεις,
+δράσεις ,πορείες και φυσικά με το πρώτο μας αντιρατσιστικό φεστιβάλ metavasis.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20240511/">
     Περισσότερα
   </a>
@@ -753,6 +766,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -803,27 +820,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20240220-01_hu46388f9c3618fac81900a8771ef33efb_1233956_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240220-01_hu1635098446018076986.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20240220-01_hu46388f9c3618fac81900a8771ef33efb_1233956_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240220-01_hu4092353249494548607.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20240220-01_hu46388f9c3618fac81900a8771ef33efb_1233956_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240220-01_hu5561372219931748294.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20240220-01_hu46388f9c3618fac81900a8771ef33efb_1233956_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240220-01_hu12304197891283450626.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20240220-01_hu46388f9c3618fac81900a8771ef33efb_1233956_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20240220-01_hu18183306991809225790.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Πόλεμος μετά από μια εκδήλωση για την ειρήνη"
             width="1204"
@@ -866,7 +883,10 @@
       
     </li>
   </ul>
-  <p class="mb-6">Τις περασμένες μέρες και αφού έγινε η εκδήλωση για την Παλαιστίνη (Κυριακή 11 Φεβρουαρίου), γίναμε παρατηρητές διάφορων γεγονότων, άρθρων και κριτικών για την ημέρα εκείνη.</p>
+  <p class="mb-6"><p>Τις περασμένες μέρες και αφού έγινε η εκδήλωση για την Παλαιστίνη (Κυριακή 11 Φεβρουαρίου), γίναμε παρατηρητές διάφορων
+γεγονότων, άρθρων και κριτικών για την ημέρα εκείνη. Ειδικά ένα άρθρο που ήρθε ως απάντηση ενός άλλου, μας προβλημάτισε
+ιδιαίτερα με τις τόσο αντιφατικές ιδέες και προτάσεις, που δύσκολα θα μπορούσε να αποδεχτεί και ο πιο καλόπιστος
+αναγνώστης.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20240220/">
     Περισσότερα
   </a>
@@ -879,6 +899,10 @@
   
   
     
+
+
+
+
 
 
 
@@ -953,27 +977,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20240119-01_huf6f0ab3395522991a55872194d51896c_1989835_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240119-01_hu17081302651677190839.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20240119-01_huf6f0ab3395522991a55872194d51896c_1989835_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240119-01_hu5333445762604706923.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20240119-01_huf6f0ab3395522991a55872194d51896c_1989835_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240119-01_hu13838574804290779816.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20240119-01_huf6f0ab3395522991a55872194d51896c_1989835_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20240119-01_hu1177931789594953653.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20240119-01_huf6f0ab3395522991a55872194d51896c_1989835_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20240119-01_hu7931971471341935354.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Διαμαρτυρία για το δίκτυο υδροδότησης Ζακύνθου"
             width="1080"
@@ -1045,6 +1069,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1095,27 +1123,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_545x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20231220-01_hu742777112265742891.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_600x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20231220-01_hu7359574048778949713.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_700x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20231220-01_hu3973416785773094701.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_1110x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20231220-01_hu10973998196295935668.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_1110x0_resize_q90_lanczos.jpg"
+              src="/images/blog/20231220-01_hu1497824340858554688.jpg"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Αντάμωση με τις Μελισσιώτισες"
             width="4080"
@@ -1150,7 +1178,8 @@
       
     </li>
   </ul>
-  <p class="mb-6">Το Σάββατο 16 Δεκέμβρη η συλλογικότητα αντάμα πραγματοποιήσαμε μια εκδήλωση από κοινού με τις Μελισσιώτισες σε μια πρώτη προσέγγιση και γνωριμία με τα χωριά της Ζακύνθου και τους ανθρώπους του.</p>
+  <p class="mb-6"><p>Το Σάββατο 16 Δεκέμβρη η συλλογικότητα αντάμα πραγματοποιήσαμε μια εκδήλωση από κοινού με τις Μελισσιώτισες σε μια πρώτη
+προσέγγιση και γνωριμία με τα χωριά της Ζακύνθου και τους ανθρώπους του.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20231220/">
     Περισσότερα
   </a>
@@ -1187,6 +1216,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1237,27 +1270,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231205-01_hu75f7ab94608acec5f2a0cd19419fdf7f_6419319_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231205-01_hu13157558377014825824.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231205-01_hu75f7ab94608acec5f2a0cd19419fdf7f_6419319_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231205-01_hu8474199179306473268.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231205-01_hu75f7ab94608acec5f2a0cd19419fdf7f_6419319_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231205-01_hu8533834462886277442.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231205-01_hu75f7ab94608acec5f2a0cd19419fdf7f_6419319_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231205-01_hu2078440698570486635.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231205-01_hu75f7ab94608acec5f2a0cd19419fdf7f_6419319_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20231205-01_hu5777848722716515933.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Προβολή ντοκιμαντέρ &#39;5 Broken Cameras&#39;"
             width="1800"
@@ -1292,7 +1325,8 @@
       
     </li>
   </ul>
-  <p class="mb-6">Στιγμές από την προβολή της ταινίας - ντοκιμαντέρ 5 Broken Cameras, που έγινε στο πλαίσιο των δράσεων αλληλεγγύης ως αντάμα προς τον παλαιστινιακό λαό, την Κυριακή 3/12 2023 στον Αυριακό.</p>
+  <p class="mb-6"><p>Στιγμές από την προβολή της ταινίας - ντοκιμαντέρ 5 Broken Cameras, που έγινε στο πλαίσιο των δράσεων αλληλεγγύης ως
+αντάμα προς τον παλαιστινιακό λαό, την Κυριακή 3/12 2023 στον Αυριακό.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20231205/">
     Περισσότερα
   </a>
@@ -1329,6 +1363,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1379,27 +1417,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231019-01_hua97f4990e17cc984de8bf7330b113260_2329084_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231019-01_hu6682009653219847429.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231019-01_hua97f4990e17cc984de8bf7330b113260_2329084_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231019-01_hu3682463423362074879.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231019-01_hua97f4990e17cc984de8bf7330b113260_2329084_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231019-01_hu6168405399461196150.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231019-01_hua97f4990e17cc984de8bf7330b113260_2329084_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231019-01_hu175868498678901132.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231019-01_hua97f4990e17cc984de8bf7330b113260_2329084_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20231019-01_hu10255857746816696349.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Συγκέντρωση αλληλεγγύης για το λαό της Παλαιστίνης"
             width="1440"
@@ -1434,7 +1472,10 @@
       
     </li>
   </ul>
-  <p class="mb-6">Σ’έναν κόσμο όπου τα ανθρώπινα δικαιώματα και η ειρήνη δεν είναι αυτονόητα, η Παλαιστίνη αντιπροσωπεύει μια σπαραγμένη καρδιά, μια φωνή που αναζητά δικαιοσύνη.</p>
+  <p class="mb-6"><p>Σ’έναν κόσμο όπου τα ανθρώπινα δικαιώματα και η ειρήνη δεν είναι αυτονόητα, η Παλαιστίνη αντιπροσωπεύει μια σπαραγμένη
+καρδιά, μια φωνή που αναζητά δικαιοσύνη. Σ’αυτήν την γωνιά του κόσμου, τα παιδιά των άλλων δεν είναι απλά ξένα πρόσωπα.
+Είναι τα παιδιά μας, έχουν την ίδια αξία με τα παιδιά όλου του κόσμου και πρέπει να τα προστατεύσουμε σαν να ήταν δικά
+μας.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20231019/">
     Περισσότερα
   </a>
@@ -1471,6 +1512,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1521,27 +1566,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230712-01_hu5984b4b7d8d7eab6a3671012cf7f5705_614045_545x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20230712-01_hu13978677236784106913.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230712-01_hu5984b4b7d8d7eab6a3671012cf7f5705_614045_600x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20230712-01_hu10122410699183244369.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230712-01_hu5984b4b7d8d7eab6a3671012cf7f5705_614045_700x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20230712-01_hu385221442954362186.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230712-01_hu5984b4b7d8d7eab6a3671012cf7f5705_614045_1110x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20230712-01_hu12132840861211779049.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230712-01_hu5984b4b7d8d7eab6a3671012cf7f5705_614045_1110x0_resize_q90_lanczos.jpg"
+              src="/images/blog/20230712-01_hu8822898936927116612.jpg"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="METAVASIS FESTIVAL | Ενάντια στο ρατσισμό"
             width="2048"
@@ -1576,7 +1621,12 @@
       
     </li>
   </ul>
-  <p class="mb-6">Το πρώτο METAVASIS FESTIVAL | Ενάντια στο ρατσισμό, την ομοφοβία &amp; τον κοινωνικό αποκλεισμό είναι πλέον γεγονός. Με κάποιους ανταμώσαμε ξανά, με κάποιους άλλους ανταμώσαμε για πρώτη φορά , όλοι μαζί όμως συντελέσαμε και πράξαμε με ανιδιοτέλεια για τη δημιουργία αυτής της ημέρας ελευθερίας, ενότητας και αλληλεγγύης.</p>
+  <p class="mb-6"><p>Το πρώτο METAVASIS FESTIVAL | Ενάντια στο ρατσισμό, την ομοφοβία &amp; τον κοινωνικό αποκλεισμό είναι πλέον γεγονός.
+Με κάποιους ανταμώσαμε ξανά, με κάποιους άλλους ανταμώσαμε για πρώτη φορά , όλοι μαζί όμως συντελέσαμε και πράξαμε με
+ανιδιοτέλεια για τη δημιουργία αυτής της ημέρας ελευθερίας, ενότητας και αλληλεγγύης.
+Είδαμε όμορφα εικαστικά έργα, ακούσαμε μαγευτικές ιστορίες, τραγούδια με στίχους που άλλοτε μας γλύκαιναν την καρδιά και
+άλλοτε μας προβλημάτιζαν, μοιράσαμε ρούχα και παπούτσια ανταλλάξαμε απόψεις και ανανεώσαμε το ραντεβού μας για την
+επόμενη μας δράση.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230712/">
     Περισσότερα
   </a>
@@ -1613,6 +1663,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1663,27 +1717,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230503-01_hu4c196515efd178140ebe3fe048ddb4c1_625905_545x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20230503-01_hu2476752897051914967.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230503-01_hu4c196515efd178140ebe3fe048ddb4c1_625905_600x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20230503-01_hu13211773070840601659.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230503-01_hu4c196515efd178140ebe3fe048ddb4c1_625905_700x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20230503-01_hu5511270098203785099.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230503-01_hu4c196515efd178140ebe3fe048ddb4c1_625905_1110x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20230503-01_hu2953240201437067516.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230503-01_hu4c196515efd178140ebe3fe048ddb4c1_625905_1110x0_resize_q90_lanczos.jpg"
+              src="/images/blog/20230503-01_hu17292776160552065021.jpg"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Πρώτη συνάντηση!"
             width="1800"
@@ -1718,7 +1772,9 @@
       
     </li>
   </ul>
-  <p class="mb-6">Είμαστε ιδιαίτερα χαρούμενοι που βρεθήκαμε και ανταλλάξαμε απόψεις στην πρώτη συνάντηση της συλλογικότητας μας την Κυριακή 30/4. Έγινε μια αρχή για να ανοίξει ένας ειλικρινής διάλογος και να δημιουργηθεί μια ζώνη ελευθερίας και δημιουργίας απέναντι στον ατομικισμό και την απραξία.</p>
+  <p class="mb-6"><p>Είμαστε ιδιαίτερα χαρούμενοι που βρεθήκαμε και ανταλλάξαμε απόψεις στην πρώτη συνάντηση της συλλογικότητας μας την
+Κυριακή 30/4. Έγινε μια αρχή για να ανοίξει ένας ειλικρινής διάλογος και να δημιουργηθεί μια ζώνη ελευθερίας και δημιουργίας απέναντι
+στον ατομικισμό και την απραξία.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230503/">
     Περισσότερα
   </a>
@@ -1805,9 +1861,9 @@
       class="img"
       width="70"
       height="auto"
-      src="/images/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_q90_h2_lanczos_3.webp"
+      src="/images/antama_black_mermugkia_hu11997741204530923746.webp"
       alt="Antama Collective"
-      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_lanczos_3.png'" />
+      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu15565378283504272735.png'" />
   
   
 
@@ -1889,7 +1945,7 @@
   <div class="border-border  border-t py-7">
     <div class="text-light  container text-center">
       <p>
-        Antama Collective 2023
+        Antama Collective
       </p>
     </div>
   </div>
@@ -1946,8 +2002,8 @@
 
 <script
   crossorigin="anonymous"
-  integrity="sha256-dKQRhBVpyVKBgty&#43;wfJcM7wTGpnzvIn9VZZIvCtAuGQ="
-  src="/js/script.min.74a411841569c9528182dcbec1f25c33bc131a99f3bc89fd559648bc2b40b864.js"></script>
+  integrity="sha256-B7oKPXi1trhn8eDc6T3qlY6Dth8XseImBjY9nYua0hE="
+  src="/js/script.min.07ba0a3d78b5b6b867f1e0dce93dea958e83b61f17b1e22606363d9d8b9ad211.js"></script>
 
 
 

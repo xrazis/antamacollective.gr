@@ -136,3 +136,7 @@ link = "js/modal.js"
 link = "plugins/cookie.js"
 [[params.plugins.js]]
 link = "plugins/youtube-lite.js"
+
+
+[params]
+  social = true

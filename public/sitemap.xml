@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/blog/20241019/</loc>
+    <lastmod>2024-10-19T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-10-19T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2024-10-19T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-10-19T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2024-10-19T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/categories/%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AC/</loc>
+    <lastmod>2024-10-19T00:00:00+03:00</lastmod>
+  </url><url>
+    <loc>/tags/%CE%BA%CF%81%CE%B1%CF%84%CE%B9%CE%BA%CE%AE-%CE%B1%CE%BD%CE%B5%CF%80%CE%AC%CF%81%CE%BA%CE%B5%CE%B9%CE%B1/</loc>
+    <lastmod>2024-10-19T00:00:00+03:00</lastmod>
+  </url><url>
     <loc>/blog/20240621/</loc>
     <lastmod>2024-06-21T00:00:00+03:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2024-06-21T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2024-06-21T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2024-06-21T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2024-06-21T00:00:00+03:00</lastmod>
-  </url><url>
     <loc>/tags/%CE%B4%CE%BF%CE%BB%CE%BF%CF%86%CE%BF%CE%BD%CE%AF%CE%B1/</loc>
-    <lastmod>2024-06-21T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/categories/%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%B9%CE%BA%CE%AC/</loc>
-    <lastmod>2024-06-21T00:00:00+03:00</lastmod>
-  </url><url>
-    <loc>/tags/%CE%BA%CF%81%CE%B1%CF%84%CE%B9%CE%BA%CE%AE-%CE%B1%CE%BD%CE%B5%CF%80%CE%AC%CF%81%CE%BA%CE%B5%CE%B9%CE%B1/</loc>
     <lastmod>2024-06-21T00:00:00+03:00</lastmod>
   </url><url>
     <loc>/blog/20240529/</loc>

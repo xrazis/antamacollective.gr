@@ -30,11 +30,11 @@
 
 
 
-<link rel="shortcut icon" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_16x0_resize_lanczos_3.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_180x0_resize_lanczos_3.png">
+<link rel="shortcut icon" href="/images/favicon_hu7424989048623988921.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu7424989048623988921.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu5893180584025630723.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu7424989048623988921.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu8390472157669192516.png">
 
 
 
@@ -75,7 +75,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.128.0">
+
+
+
+
+
+<title>Antama Collective</title>
 
 
 
@@ -90,12 +95,17 @@
 
 
 
-  <meta name="keywords" content="Antama Collective, Blog" />
+
+  <meta
+    name="keywords"
+    content="Antama Collective, Blog" />
 
 
 
 
-<meta name="description" content="Website for the Antama Collective located in Zakynthos" />
+<meta
+  name="description"
+  content="Website for the Antama Collective located in Zakynthos" />
 
 
 
@@ -105,13 +115,6 @@
 
 
 
-  
-  
-
-
-
-
-
 
   
 
@@ -136,22 +139,25 @@
   
   
 
+
   
 
 
 
 
 
-<meta property="og:title" content="Εργασία" />
+<meta property="og:title" content="Antama Collective" />
 <meta property="og:description" content="Website for the Antama Collective located in Zakynthos" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/tags/%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CE%AF%CE%B1/" />
 
 
-<meta name="twitter:title" content="Εργασία" />
+<meta name="twitter:title" content="Antama Collective" />
 <meta name="twitter:description" content="Website for the Antama Collective located in Zakynthos" />
 
 
+
+  <meta name="twitter:creator" content="@Antama Collective" />
 
 
 
@@ -165,8 +171,8 @@
 <script>
   let indexURL = "/searchindex.json";
   let includeSectionsInSearch = ["blog"];
-  let no_results_for = "0 results for";
-  let empty_search_results_placeholder = "";
+  let search_no_results = "0 results for";
+  let search_initial_message = "";
 </script>
 
 
@@ -237,8 +243,8 @@
 
 
 <link
-  href="/css/style.min.f2abe538d4e8d23d156967d5f816d3ef78ab53d58b9be38f816d1e826c50152f.css"
-  integrity="sha256-8qvlONTo0j0VaWfV+BbT73irU9WLm+OPgW0egmxQFS8="
+  href="/css/style.min.15542b6549cdaf16c7a6e2e3e46839170123651fea04610b03224367e7125ea2.css"
+  integrity="sha256-FVQrZUnNrxbHpuLj5Gg5FwEjZR/qBGELAyJDZ+cSXqI="
   rel="stylesheet" />
 
   </head>
@@ -324,9 +330,9 @@
       class="img"
       width="70"
       height="auto"
-      src="/images/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_q90_h2_lanczos_3.webp"
+      src="/images/antama_black_mermugkia_hu11997741204530923746.webp"
       alt="Antama Collective"
-      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_lanczos_3.png'" />
+      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu15565378283504272735.png'" />
   
   
 
@@ -427,16 +433,17 @@
 
   
     <div
-      class="search-wrapper search-modal "
-      data-image="true"
-      data-description="true"
-      data-tags="true"
-      data-categories="true"
-      tabindex="-1"
+      class="search-modal "
       aria-hidden="true"
       style="--color-primary: #121212">
-      <div class="search-wrapper-content">
-        <div class="search-input-body">
+      <div data-target="close-search-modal" class="search-modal-overlay"></div>
+      <div
+        class="search-wrapper"
+        data-image="true"
+        data-description="true"
+        data-tags="true"
+        data-categories="true">
+        <div class="search-wrapper-header">
           <label for="search-modal-input" style="margin-top:-1px">
             <span class="sr-only">search icon</span>
             <svg
@@ -484,7 +491,6 @@
                 width="14"
                 height="14"
                 fill="currentColor"
-                style="margin-top:-2px;"
                 viewBox="0 0 16 16">
                 <path
                   d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
@@ -528,6 +534,7 @@
       </div>
     </div>
   
+
 
 
 
@@ -611,6 +618,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -661,27 +672,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231108-01_hu8f08360e678607ba8bc848bf8972d93f_620729_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231108-01_hu4940986968670967104.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231108-01_hu8f08360e678607ba8bc848bf8972d93f_620729_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231108-01_hu7583309136551008058.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231108-01_hu8f08360e678607ba8bc848bf8972d93f_620729_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231108-01_hu10027077775297885920.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231108-01_hu8f08360e678607ba8bc848bf8972d93f_620729_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231108-01_hu224937085104742030.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231108-01_hu8f08360e678607ba8bc848bf8972d93f_620729_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20231108-01_hu2234144646304511343.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Με τους οικοδόμους είμαστε μαζί!"
             width="654"
@@ -716,7 +727,10 @@
       
     </li>
   </ul>
-  <p class="mb-6">Σήμερα 8/11/23 είναι ημέρα απεργίας για τον κλάδο των οικοδόμων. Θα μπορούσε κάποιος να αναρωτηθεί για ποιο λόγο απεργούν , από τη στιγμή που η δουλειά στον κλάδο της οικοδομής έχει ανεβεί κατακόρυφα τα τελευταία χρόνια.</p>
+  <p class="mb-6"><p>Σήμερα 8/11/23 είναι ημέρα απεργίας για τον κλάδο των οικοδόμων. Θα μπορούσε κάποιος να αναρωτηθεί για ποιο λόγο
+απεργούν , από τη στιγμή που η δουλειά στον κλάδο της οικοδομής έχει ανεβεί κατακόρυφα τα τελευταία χρόνια. Αυτό είναι
+μια πραγματικότητα ,η δουλεία έχει αυξηθεί, όμως αυτή είναι η μια πλευρά του νομίσματος. Από την άλλη πλευρά όμως,
+υπάρχει μια άλλη πραγματικότητα ,πιο σκληρή.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20231108/">
     Περισσότερα
   </a>
@@ -729,6 +743,10 @@
   
   
     
+
+
+
+
 
 
 
@@ -799,8 +817,8 @@
 
         <img
           
-            src="/images/blog/20230830-01_hu68c1b62c7f90111fc06009ce5d03168a_331704_408x408_resize_q90_h2_lanczos_3.webp" loading="lazy" decoding="async"
-            alt="Καλώς ήρθατε στον νεο εργασιακό μεσαίωνα"
+            src="/images/blog/20230830-01_hu13194298914978064840.webp" loading="lazy"
+            decoding="async" alt="Καλώς ήρθατε στον νεο εργασιακό μεσαίωνα"
           
 
           class=" mb-6 w-full rounded blog-list-image img"
@@ -836,7 +854,18 @@
       
     </li>
   </ul>
-  <p class="mb-6">Διαχρονικά, κριτήριο για το πόσο εξελιγμένη είναι μια κοινωνία είναι ο τρόπος συμπεριφοράς στα αδύναμα μέλη της : Στις γυναίκες, τις εγκύους, τους ψυχικά ασθενείς, τους ηλικιωμένους.</p>
+  <p class="mb-6"><p>Διαχρονικά, κριτήριο για το πόσο εξελιγμένη είναι μια κοινωνία είναι ο τρόπος συμπεριφοράς στα αδύναμα μέλη της : Στις
+γυναίκες, τις εγκύους, τους ψυχικά ασθενείς, τους ηλικιωμένους. Εν μέσω πυρκαγιών «πέρασε» η κυβέρνηση από την Ολομέλεια
+της Βουλής το άρθρο 61 ανοίγοντας διάπλατα τον δρόμο για την αύξηση του ορίου συνταξιοδότησης στα 74 χρόνια. Αυτό δεν
+είναι το μόνο αντιλαϊκό μέτρο που «περνάει» η κυβέρνηση εν μέσω πυρκαιών. Το νέο νομοσχέδιο προβλέπει θέσπιση 6ήμερης
+εργασίας και εργασία σε περισσότερους από έναν εργοδότες. Μία από τις σημαντικότερες κατακτήσεις του εργατικού κινήματος
+παγκόσμια ήταν η 8ωρη, πενθήμερη εργασία. Με τη νέα ρύθμιση θεσμοποιείται ό,τι απαγορευόταν μέχρι σήμερα, που σημαίνει
+ότι το σύνολο των ωρών απασχόλησης φτάνει τις 13. Ετσι, λέει το υπουργείο, μπαίνει τάξη στη «μαύρη εργασία» και
+πληρούται η πρόβλεψη της ευρωπαϊκής νομοθεσίας περί υποχρεωτικού 11ώρου ανάπαυσης. Να θυμίσουμε μόνο ότι το σύνθημα του
+Σικάγο στα τέλη του 19ου αιώνα ήταν «8 ώρες εργασία - 8 ώρες ελεύθερος χρόνος - 8 ώρες ύπνος». Σχεδόν ενάμιση αιώνα μετά
+το πρώτο γίνεται 13 ώρες και τα δύο τελευταία συγχωνεύονται σε 11 ώρες…Έχει παρατηρηθεί δε, οτι με τη μείωση των ωρών
+εργασίας αυξάνεται σημαντικά η παραγωγικότητα. Στις «προηγμένες» σκανδιναβικές χώρες έχουν θεσπιστεί πολύ περισσότερες
+αργίες από καθιερωμένα σαββατοκύριακα, με πολύ ενθαρρυντικά αποτελέσματα ως προς την παραγωγικότητα.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230830/">
     Περισσότερα
   </a>
@@ -849,6 +878,10 @@
   
   
     
+
+
+
+
 
 
 
@@ -923,27 +956,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230726-01_hufa95598e6cdfa1a44d3cb7e98aaa496f_622678_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230726-01_hu12258443530893906132.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230726-01_hufa95598e6cdfa1a44d3cb7e98aaa496f_622678_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230726-01_hu15096943841931522542.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230726-01_hufa95598e6cdfa1a44d3cb7e98aaa496f_622678_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230726-01_hu13587190817369134514.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230726-01_hufa95598e6cdfa1a44d3cb7e98aaa496f_622678_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230726-01_hu10833594609172476648.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230726-01_hufa95598e6cdfa1a44d3cb7e98aaa496f_622678_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230726-01_hu15850050550819657056.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Ναι στο δικαίωμα της εργασίας με ασφάλεια"
             width="640"
@@ -978,7 +1011,12 @@
       
     </li>
   </ul>
-  <p class="mb-6">Οι υψηλές θερμοκρασίες συνεχίζονται για μια ακόμα μέρα και από ότι φαίνεται θα συνεχιστούν δυσχεραίνοντας την καθημερινότητα όλων μας, αλλά πιο πολύ την καθημερινότητα όλων όσων εργάζονται σε εξωτερικό χώρο.</p>
+  <p class="mb-6"><p>Οι υψηλές θερμοκρασίες συνεχίζονται για μια ακόμα μέρα και από ότι φαίνεται θα συνεχιστούν δυσχεραίνοντας την
+καθημερινότητα όλων μας, αλλά πιο πολύ την καθημερινότητα όλων όσων εργάζονται σε εξωτερικό χώρο. Χιλιάδες εργαζόμενοι
+στην εστίαση, στις οικοδομές, διανομείς, αγρότες, οδηγοί κλπ. έρχονται αντιμέτωποι καθημερινά αυτές τις μέρες με
+πρωτόγνωρες για τα δεδομένα της Ελλάδας θερμοκρασίες. Αυτή είναι μια νέα συνθήκη που σύμφωνα με τους επιστήμονες είναι
+αποτέλεσμα της κλιματικής αλλαγής που βιώνει ο πλανήτης μας και από εδώ και πέρα θα είναι συχνό φαινόμενο , με λίγα
+λόγια οι αποπνικτικοί καύσωνες ήρθαν για να μείνουν.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230726/">
     Περισσότερα
   </a>
@@ -1065,9 +1103,9 @@
       class="img"
       width="70"
       height="auto"
-      src="/images/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_q90_h2_lanczos_3.webp"
+      src="/images/antama_black_mermugkia_hu11997741204530923746.webp"
       alt="Antama Collective"
-      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_lanczos_3.png'" />
+      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu15565378283504272735.png'" />
   
   
 
@@ -1149,7 +1187,7 @@
   <div class="border-border  border-t py-7">
     <div class="text-light  container text-center">
       <p>
-        Antama Collective 2023
+        Antama Collective
       </p>
     </div>
   </div>
@@ -1206,8 +1244,8 @@
 
 <script
   crossorigin="anonymous"
-  integrity="sha256-dKQRhBVpyVKBgty&#43;wfJcM7wTGpnzvIn9VZZIvCtAuGQ="
-  src="/js/script.min.74a411841569c9528182dcbec1f25c33bc131a99f3bc89fd559648bc2b40b864.js"></script>
+  integrity="sha256-B7oKPXi1trhn8eDc6T3qlY6Dth8XseImBjY9nYua0hE="
+  src="/js/script.min.07ba0a3d78b5b6b867f1e0dce93dea958e83b61f17b1e22606363d9d8b9ad211.js"></script>
 
 
 

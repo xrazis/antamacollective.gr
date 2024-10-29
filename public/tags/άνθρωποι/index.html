@@ -30,11 +30,11 @@
 
 
 
-<link rel="shortcut icon" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_16x0_resize_lanczos_3.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_180x0_resize_lanczos_3.png">
+<link rel="shortcut icon" href="/images/favicon_hu7424989048623988921.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu7424989048623988921.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu5893180584025630723.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu7424989048623988921.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu8390472157669192516.png">
 
 
 
@@ -75,7 +75,12 @@
 
 
 
-<meta name="generator" content="Hugo 0.128.0">
+
+
+
+
+
+<title>Antama Collective</title>
 
 
 
@@ -90,12 +95,17 @@
 
 
 
-  <meta name="keywords" content="Antama Collective, Blog" />
+
+  <meta
+    name="keywords"
+    content="Antama Collective, Blog" />
 
 
 
 
-<meta name="description" content="Website for the Antama Collective located in Zakynthos" />
+<meta
+  name="description"
+  content="Website for the Antama Collective located in Zakynthos" />
 
 
 
@@ -105,13 +115,6 @@
 
 
 
-  
-  
-
-
-
-
-
 
   
 
@@ -136,22 +139,25 @@
   
   
 
+
   
 
 
 
 
 
-<meta property="og:title" content="Άνθρωποι" />
+<meta property="og:title" content="Antama Collective" />
 <meta property="og:description" content="Website for the Antama Collective located in Zakynthos" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/tags/%CE%AC%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF%CE%B9/" />
 
 
-<meta name="twitter:title" content="Άνθρωποι" />
+<meta name="twitter:title" content="Antama Collective" />
 <meta name="twitter:description" content="Website for the Antama Collective located in Zakynthos" />
 
 
+
+  <meta name="twitter:creator" content="@Antama Collective" />
 
 
 
@@ -165,8 +171,8 @@
 <script>
   let indexURL = "/searchindex.json";
   let includeSectionsInSearch = ["blog"];
-  let no_results_for = "0 results for";
-  let empty_search_results_placeholder = "";
+  let search_no_results = "0 results for";
+  let search_initial_message = "";
 </script>
 
 
@@ -237,8 +243,8 @@
 
 
 <link
-  href="/css/style.min.f2abe538d4e8d23d156967d5f816d3ef78ab53d58b9be38f816d1e826c50152f.css"
-  integrity="sha256-8qvlONTo0j0VaWfV+BbT73irU9WLm+OPgW0egmxQFS8="
+  href="/css/style.min.15542b6549cdaf16c7a6e2e3e46839170123651fea04610b03224367e7125ea2.css"
+  integrity="sha256-FVQrZUnNrxbHpuLj5Gg5FwEjZR/qBGELAyJDZ+cSXqI="
   rel="stylesheet" />
 
   </head>
@@ -324,9 +330,9 @@
       class="img"
       width="70"
       height="auto"
-      src="/images/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_q90_h2_lanczos_3.webp"
+      src="/images/antama_black_mermugkia_hu11997741204530923746.webp"
       alt="Antama Collective"
-      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_lanczos_3.png'" />
+      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu15565378283504272735.png'" />
   
   
 
@@ -427,16 +433,17 @@
 
   
     <div
-      class="search-wrapper search-modal "
-      data-image="true"
-      data-description="true"
-      data-tags="true"
-      data-categories="true"
-      tabindex="-1"
+      class="search-modal "
       aria-hidden="true"
       style="--color-primary: #121212">
-      <div class="search-wrapper-content">
-        <div class="search-input-body">
+      <div data-target="close-search-modal" class="search-modal-overlay"></div>
+      <div
+        class="search-wrapper"
+        data-image="true"
+        data-description="true"
+        data-tags="true"
+        data-categories="true">
+        <div class="search-wrapper-header">
           <label for="search-modal-input" style="margin-top:-1px">
             <span class="sr-only">search icon</span>
             <svg
@@ -484,7 +491,6 @@
                 width="14"
                 height="14"
                 fill="currentColor"
-                style="margin-top:-2px;"
                 viewBox="0 0 16 16">
                 <path
                   d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
@@ -528,6 +534,7 @@
       </div>
     </div>
   
+
 
 
 
@@ -611,6 +618,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -661,27 +672,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231124-01_hufe4d767fc99f2bef6e29e3d66a041cbf_560501_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231124-01_hu2619059986959249104.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231124-01_hufe4d767fc99f2bef6e29e3d66a041cbf_560501_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231124-01_hu10005408018294169936.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231124-01_hufe4d767fc99f2bef6e29e3d66a041cbf_560501_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231124-01_hu14082936164131558075.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231124-01_hufe4d767fc99f2bef6e29e3d66a041cbf_560501_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231124-01_hu13083047071452398644.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231124-01_hufe4d767fc99f2bef6e29e3d66a041cbf_560501_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20231124-01_hu6246560087286317902.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Γιατί τόση σιωπή για τις δολοφονίες των Ρομά;"
             width="1024"
@@ -716,7 +727,11 @@
       
     </li>
   </ul>
-  <p class="mb-6">Ένας ακόμα Ρομά δολοφονείται προ ημερών από χέρια αστυνομικού. Ο τρίτος στη σειρά καθώς έχει προηγηθεί η δολοφονία του Νίκου Σαμπάνη και του Κώστα Φραγκούλη.</p>
+  <p class="mb-6"><p>Ένας ακόμα Ρομά δολοφονείται προ ημερών από χέρια αστυνομικού. Ο τρίτος στη σειρά καθώς έχει προηγηθεί η δολοφονία του
+Νίκου Σαμπάνη και του Κώστα Φραγκούλη. Ο Χρήστος Μιχαλόπουλος λοιπόν πυροβολείται κατά την καταδίωξη του από την
+αστυνομία ενώ μαρτυρίες λένε πως το όχημα του ήταν ήδη ακινητοποιημένο όταν τον πυροβόλησαν και ο δολοφόνος αστυνομικός
+είναι ελεύθερος με περιοριστικούς όρους. Η αντίδραση όμως; Πού είναι το κίνημα; Ολη αυτή η αδράνεια δεν θα πρέπει να μας
+προβληματίσει;</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20231124/">
     Περισσότερα
   </a>
@@ -753,6 +768,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -803,27 +822,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231121-01_hu5179bd6b7222428b6a6673ecfc64b6ad_1043146_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231121-01_hu11986772814000057080.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231121-01_hu5179bd6b7222428b6a6673ecfc64b6ad_1043146_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231121-01_hu10935337434503698886.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231121-01_hu5179bd6b7222428b6a6673ecfc64b6ad_1043146_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231121-01_hu18134444910945224483.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231121-01_hu5179bd6b7222428b6a6673ecfc64b6ad_1043146_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231121-01_hu15616905488463166095.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231121-01_hu5179bd6b7222428b6a6673ecfc64b6ad_1043146_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20231121-01_hu16537356175843874408.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Στο πλάι όσων αγωνίζονται για τη Ζωή, το Ψωμί και την Ελευθερία τους."
             width="1080"
@@ -858,7 +877,11 @@
       
     </li>
   </ul>
-  <p class="mb-6">Την περασμένη Παρασκευή επισκέφθηκε το νησί μας ο Υφυπουργός Αγροτικής Ανάπτυξης και σε δηλώσεις του από κοινού με τον βουλευτή Ζακύνθου, ανακοίνωσαν ότι θα ‘’εφαρμόσουν πολιτική’’ που θα στηρίξει τους αγρότες , άλλωστε αυτό συνηθίζουν να κάνουν οι υπουργοί στις επισκέψεις τους.</p>
+  <p class="mb-6"><p>Την περασμένη Παρασκευή επισκέφθηκε το νησί μας ο Υφυπουργός Αγροτικής Ανάπτυξης και σε δηλώσεις του από κοινού με τον
+βουλευτή Ζακύνθου, ανακοίνωσαν ότι θα ‘’εφαρμόσουν πολιτική’’ που θα στηρίξει τους αγρότες , άλλωστε αυτό συνηθίζουν να
+κάνουν οι υπουργοί στις επισκέψεις τους. Αυτή τη φορά όμως η ανταπόκριση του κράτους ήταν αστραπιαία. Δεν περίμεναν να
+περάσει ούτε το Σαββατοκύριακο που μεσολάβησε από την επίσκεψη του υφυπουργού στη Ζάκυνθο και κατευθείαν η ‘’βοήθεια ‘’
+προς τους αγρότες ξεκίνησε.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20231121/">
     Περισσότερα
   </a>
@@ -895,6 +918,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -945,27 +972,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231117-01_hu0a355900cf6372e6d657645814ec57c3_567879_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231117-01_hu11850875953707127279.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231117-01_hu0a355900cf6372e6d657645814ec57c3_567879_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231117-01_hu7058064963438899710.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231117-01_hu0a355900cf6372e6d657645814ec57c3_567879_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231117-01_hu9743472734967769053.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231117-01_hu0a355900cf6372e6d657645814ec57c3_567879_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231117-01_hu5544792534284699108.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231117-01_hu0a355900cf6372e6d657645814ec57c3_567879_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20231117-01_hu8326470862697167751.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Το ποίημα των Ποιητών"
             width="878"
@@ -1000,7 +1027,10 @@
       
     </li>
   </ul>
-  <p class="mb-6">Εκεί που έπεσε είναι μια κόκκινη λίμνη. Δεν θα ξεχάσουμε ποτέ τη φωνή σου γενναίο παιδί. Από εκείνη τη νύχτα, ό,τι και αν πω φωνάζει αίμα.</p>
+  <p class="mb-6"><p>Εκεί που έπεσε είναι μια κόκκινη λίμνη. Δεν θα ξεχάσουμε ποτέ τη φωνή σου γενναίο παιδί. Από εκείνη τη νύχτα, ό,τι και
+αν πω φωνάζει αίμα. Το πλήθος φεύγει, έφυγε και εκεί σε βρήκα αργότερα με μια ριπή στην πλάτη σου, ετών ας πούμε 24,
+καμμία ταυτότητα. Θα&rsquo;ρθει ένας κόσμος χλόης αγόρι και θα δουλεύουμε στη μοιρασιά των λουλουδιών.
+Απλώνοντας το χέρι μου δεν φτάνει ως εκεί που ωραία λουλούδια τις μορφές σας λιτανεύει ο αέρας της αρετής.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20231117/">
     Περισσότερα
   </a>
@@ -1037,6 +1067,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1087,27 +1121,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231026-01_huff6bf60fd15014d6ba2043654c793864_569072_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231026-01_hu4711826336837201470.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231026-01_huff6bf60fd15014d6ba2043654c793864_569072_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231026-01_hu15051878779556286127.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231026-01_huff6bf60fd15014d6ba2043654c793864_569072_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231026-01_hu9228173679560769225.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231026-01_huff6bf60fd15014d6ba2043654c793864_569072_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20231026-01_hu11744322848192971060.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231026-01_huff6bf60fd15014d6ba2043654c793864_569072_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20231026-01_hu4647870039025866781.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Πέτρος Κλαμπάνης: αυτός που δίνει στη jazz μια αλλιώτικη πνοή"
             width="640"
@@ -1142,7 +1176,12 @@
       
     </li>
   </ul>
-  <p class="mb-6">Γεννημένος στη Ζάκυνθο, συνθέτης και μπασίστας ο Πέτρος Κλαμπάνης έχει τόσα πολλά να πει για τη jazz και όχι μόνο. Ωδεία , μουσικοί διαγωνισμοί, ταξίδια στο Άμστερνταμ αλλά και διαμονή στη Νέα Υόρκη όπου ζει πλέον μόνιμα.</p>
+  <p class="mb-6"><p>Γεννημένος στη Ζάκυνθο, συνθέτης και μπασίστας ο Πέτρος Κλαμπάνης έχει τόσα πολλά να πει για τη jazz και όχι μόνο.
+Ωδεία , μουσικοί διαγωνισμοί, ταξίδια στο Άμστερνταμ αλλά και διαμονή στη Νέα Υόρκη όπου ζει πλέον μόνιμα. Ευρηματικός
+ήχος που δεν διστάζει να &laquo;χρησιμοποιεί&raquo; την ελληνική παράδοση και τη τζάζ ώστε να φτάσει στον καταπληκτικο
+δίσκο &laquo;Tora Collective&raquo;. Κόκκινο εξώφυλλο του δίσκου με κέντημα και μια συνεργασία με την Αρετή Κετιμέ την οποία σε
+συνέντευξη του έχει χαρακτηρίσει ως ένα μουσικό άγγελο. Και να πώς έφτασε το Tora Collective να είναι στον πρώτο γύρω
+της ψηφοφορίας για τα βραβεία Grammy!</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20231026/">
     Περισσότερα
   </a>
@@ -1179,6 +1218,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1229,27 +1272,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230922-01_hu84b31fd9214d9459d4dd47f034389a88_193499_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230922-01_hu13366220730053001057.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230922-01_hu84b31fd9214d9459d4dd47f034389a88_193499_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230922-01_hu16740691528996720488.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230922-01_hu84b31fd9214d9459d4dd47f034389a88_193499_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230922-01_hu2680036533697834427.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230922-01_hu84b31fd9214d9459d4dd47f034389a88_193499_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230922-01_hu17256434091446032285.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230922-01_hu84b31fd9214d9459d4dd47f034389a88_193499_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230922-01_hu2768806202211779816.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Καρίμ Ασίρ: Ο Αφγανός Τσάρλι Τσάπλιν"
             width="660"
@@ -1284,7 +1327,14 @@
       
     </li>
   </ul>
-  <p class="mb-6">Βλέπει το φως στο 1994 στο Ιράν. Γνωστός ως ο Αφγανός Τσάρλι Τσάπλιν δίνει συνεντεύξεις στο BBC World, στο πρακτορείο REUTERS, και ακριβώς επειδή μιλάει σε δυτικά κανάλια και υποδύεται δυτικό χαρακτήρα θέλουν να τον σκοτώσουν.</p>
+  <p class="mb-6"><p>Βλέπει το φως στο 1994 στο Ιράν. Γνωστός ως ο Αφγανός Τσάρλι Τσάπλιν δίνει συνεντεύξεις στο BBC World, στο πρακτορείο
+REUTERS, και ακριβώς επειδή μιλάει σε δυτικά κανάλια και υποδύεται δυτικό χαρακτήρα θέλουν να τον σκοτώσουν. Δίνει
+λοιπόν παραστάσεις στην Καμπούλ χρησιμοποιώντας την περσόνα του Τ. Τσάπλιν δίνοντας στοιχεία για την κατάσταση και τις
+συνθήκες στη χώρα του. Όμως στις 15 Αυγούστου του 2021 με την εισβολή των Ταλιμπάν στην Καμπούλ στέλνεται μια επιστολή
+θανάτου σε αυτόν και την οικογένειά του. &laquo; Ορκιζόμαστε στο θεό, αν εμφανιστείτε ξανά στα δυτικά μέσα ενημέρωσης ως
+άπιστος και Τσάρλι Τσάπλιν οι Μουτζαχεντίν του Ισλαμικού Εμιράτου θα σκοτώσουν εσάς και την οικογένεια σας.&raquo; Και εδώ
+προφανώς τίθεται το θέμα της επικινδυνότητας του γέλιου, εκεί που η θρησκεία και η απολυταρχική εξουσία έχουν το μόνο
+λόγο.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230922/">
     Περισσότερα
   </a>
@@ -1321,6 +1371,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1371,27 +1425,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230920-01_hu291922fb0423ffb3f8b0e4574f33912f_1442183_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230920-01_hu3660684893958317879.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230920-01_hu291922fb0423ffb3f8b0e4574f33912f_1442183_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230920-01_hu6011829589296938435.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230920-01_hu291922fb0423ffb3f8b0e4574f33912f_1442183_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230920-01_hu18153674235607924344.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230920-01_hu291922fb0423ffb3f8b0e4574f33912f_1442183_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230920-01_hu13739359887250349575.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230920-01_hu291922fb0423ffb3f8b0e4574f33912f_1442183_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230920-01_hu18174462885975912422.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Στη μνήμη του Ζάκ"
             width="1200"
@@ -1426,7 +1480,15 @@
       
     </li>
   </ul>
-  <p class="mb-6">Άυριο, 21 Σεπτεμβρίου 2023, συμπληρώνονται 5 χρόνια από την εν-ψυχρώ, άγρια δολοφονία στην οδό Γλάδστωνος. Ο Ζάκ Κωστόπουλου ή αλλιώς Zackie-Oh σκοτώθηκε στις 21 Σεπτεμβρίου του 2018, από θανάσιμο τραυματισμό σε επεισόδιο που έλαβε χώρα στην περιοχή της πλατείας Ομονοίας στην Αθήνα.</p>
+  <p class="mb-6"><p>Άυριο, 21 Σεπτεμβρίου 2023, συμπληρώνονται 5 χρόνια από την εν-ψυχρώ, άγρια δολοφονία στην οδό Γλάδστωνος. Ο Ζάκ
+Κωστόπουλου ή αλλιώς Zackie-Oh σκοτώθηκε στις 21 Σεπτεμβρίου του 2018, από θανάσιμο τραυματισμό σε επεισόδιο που έλαβε
+χώρα στην περιοχή της πλατείας Ομονοίας στην Αθήνα. Ειδικότερα, βρέθηκε παγιδευμένος μέσα σε κοσμηματοπωλείο επί της
+οδού Γλάδστωνος υπό αδιευκρίνιστες συνθήκες. Ξυλοκοπήθηκε από τον ιδιοκτήτη του καταστήματος (Σπ. Δημόπουλο) και έναν
+παριστάμενο μεσίτη (Αθ. Χορταριά), θεωρούμενος ως ληστής. Κατόπιν του ξυλοδαρμού και όντας αιμόφυρτος συνελήφθη από
+τουλάχιστον 8 αστυνομικούς που έσπευσαν στον τόπο του βίαιου συμβάντος. Eξέπνευσε κατά την μεταφορά του με ασθενοφόρο
+στο νοσοκομείο. Ήταν ακτιβιστής της ΛΟΑΤΚΙ κοινότητας και των οροθετικών ατόμων. Γεννήθηκε στην Αμερική και ήρθε μικρός
+στην Ελλάδα. Είχε δραστηριοποιηθεί ιδιαίτερα στο χώρο της LBGTQ κοινότητας ως ακτιβιστής για τα δικαιώματά της,
+αρθρογραφούσε σε πολλά ΜΜΕ, μεταξύ των οποίων και το Docville του Documento, και ήταν ιδιαίτερα αγαπητός στον κύκλο του.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230920/">
     Περισσότερα
   </a>
@@ -1463,6 +1525,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1513,27 +1579,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230804-01_hua445b82a87c10c3d5cc5c319aa81c6b5_271145_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230804-01_hu1359586539367028381.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230804-01_hua445b82a87c10c3d5cc5c319aa81c6b5_271145_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230804-01_hu4412952619700440355.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230804-01_hua445b82a87c10c3d5cc5c319aa81c6b5_271145_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230804-01_hu2845992976008842423.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230804-01_hua445b82a87c10c3d5cc5c319aa81c6b5_271145_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230804-01_hu12772327453916021130.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230804-01_hua445b82a87c10c3d5cc5c319aa81c6b5_271145_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230804-01_hu2154871643434426856.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Ο Ζακυνθινός μαέστρος Στάθης Σούλης"
             width="750"
@@ -1568,7 +1634,13 @@
       
     </li>
   </ul>
-  <p class="mb-6">Ο Στάθης Σούλης θεωρείται ένας από τους ανερχόμενους μαέστρους της γενιάς του. Γεννημένος στην Αθήνα το 1989 , όμως με καταγωγή από τη Ζάκυνθο στην οποία και μεγάλωσε ,ξεκίνησε σε ηλικία 4 ετών τις βασικές μουσικές σπουδές του όπου και τις ολοκληρώνει με εξαιρετικές επιδόσεις.</p>
+  <p class="mb-6"><p>Ο Στάθης Σούλης θεωρείται ένας από τους ανερχόμενους μαέστρους της γενιάς
+του. Γεννημένος στην Αθήνα το 1989 , όμως με καταγωγή από τη Ζάκυνθο στην οποία και μεγάλωσε ,ξεκίνησε σε ηλικία 4 ετών
+τις βασικές μουσικές σπουδές του όπου και τις ολοκληρώνει με εξαιρετικές επιδόσεις.Στη συνέχεια οι σπουδές του στο Τμήμα
+Μουσικών Σπουδών του Ιονίου Πανεπιστημίου με ειδίκευση τη Διεύθυνση Ορχήστρας υπό την καθοδήγηση και εποπτεία του
+καθηγητή του κου Λογιάδη ,του έδωσε την ευκαιρία να έρθει σε επαφή με έργα για ορχήστρα ή έργα για σύνολα μουσικής
+δωματίου από το φάσμα όλων των μουσικών εποχών, ενώ ταυτόχρονα του επέκτειναν τον ορίζοντα διαχείρισης μουσικών συνόλων
+μέσα από την συνεργασία του με την χορωδία και το φωνητικό σύνολο του τμήματος ως μαέστρος αλλά και ως χορωδός.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230804/">
     Περισσότερα
   </a>
@@ -1605,6 +1677,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1655,27 +1731,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230623-01_hu8b832a7c176149b02757aacf95f5ef60_353911_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230623-01_hu7804076304803196721.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230623-01_hu8b832a7c176149b02757aacf95f5ef60_353911_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230623-01_hu10615214642524812089.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230623-01_hu8b832a7c176149b02757aacf95f5ef60_353911_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230623-01_hu17289706460052715018.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230623-01_hu8b832a7c176149b02757aacf95f5ef60_353911_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230623-01_hu17948948260808138419.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230623-01_hu8b832a7c176149b02757aacf95f5ef60_353911_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230623-01_hu3228358676414567017.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Ιάννης Ξενάκης (1922 – 2001)"
             width="640"
@@ -1710,7 +1786,10 @@
       
     </li>
   </ul>
-  <p class="mb-6">Ένας από τους σημαντικότερους Έλληνες συνθέτες και αρχιτέκτονες του 20ού αιώνα, διεθνώς γνωστός ως «Iannis Xenakis». Οι πρωτοποριακές συνθετικές μέθοδοι, που ανέπτυξε συσχέτιζαν τη μουσική και την αρχιτεκτονική με τα μαθηματικά και τη φυσική, μέσω της χρήσης υπολογιστών αλλά και μοντέλων από τη θεωρία των συνόλων, τη θεωρία των πιθανοτήτων, τη θερμοδυναμική, τη Χρυσή Τομή, την ακολουθία Φιμπονάτσι κ.</p>
+  <p class="mb-6"><p>Ένας από τους σημαντικότερους Έλληνες συνθέτες και αρχιτέκτονες του 20ού αιώνα, διεθνώς γνωστός ως «Iannis Xenakis».
+Οι πρωτοποριακές συνθετικές μέθοδοι, που ανέπτυξε συσχέτιζαν τη μουσική και την αρχιτεκτονική με τα μαθηματικά και τη
+φυσική, μέσω της χρήσης υπολογιστών αλλά και μοντέλων από τη θεωρία των συνόλων, τη θεωρία των πιθανοτήτων, τη
+θερμοδυναμική, τη Χρυσή Τομή, την ακολουθία Φιμπονάτσι κ.ά.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230623/">
     Περισσότερα
   </a>
@@ -1747,6 +1826,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1797,27 +1880,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230609-01_huaf6729be1dde367e8a223fc277875709_1231188_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230609-01_hu12269357052109902560.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230609-01_huaf6729be1dde367e8a223fc277875709_1231188_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230609-01_hu15896759617108006844.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230609-01_huaf6729be1dde367e8a223fc277875709_1231188_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230609-01_hu10980837798261129453.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230609-01_huaf6729be1dde367e8a223fc277875709_1231188_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230609-01_hu10327040522920817712.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230609-01_huaf6729be1dde367e8a223fc277875709_1231188_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230609-01_hu17451348697895565524.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Από τα γκράφιτι στην γκαλερί"
             width="960"
@@ -1852,7 +1935,11 @@
       
     </li>
   </ul>
-  <p class="mb-6">O Jean Michel Basquiat (1960-1988), ένας πρωτοπόρος καλλιτέχνης που αναδείχτηκε ως μια εξέχουσα μορφή της νεουρκέζικης καλλιτεχνικής σκηνής της δεκαετίας του 1980, άφησε ανεξίτηλο το σημάδι του στον κόσμο της σύγχρονης τέχνης.</p>
+  <p class="mb-6"><p>O Jean Michel Basquiat (1960-1988), ένας πρωτοπόρος καλλιτέχνης που αναδείχτηκε ως μια εξέχουσα μορφή της νεουρκέζικης
+καλλιτεχνικής σκηνής της δεκαετίας του 1980, άφησε ανεξίτηλο το σημάδι του στον κόσμο της σύγχρονης τέχνης.
+Αντλούσε έμπνευση από τους πολιτισμούς της Αφρικής, Αφροαμερικής και Καραϊβικής αλλά και από την αφοσίωση του στα
+σύγχρονα κοινωνικά και πολιτικά ζητήματα. Ασχολήθηκε με θέματα όπως ο ρατσισμός, η κοινωνική ανισότητα και οι αγώνες των
+περιθωριοποιημένων κοινοτήτων.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230609/">
     Περισσότερα
   </a>
@@ -1889,6 +1976,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -1939,27 +2030,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230409-01_hu49c2ebc5630faacb0670ab507da41f6c_7998938_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230409-01_hu16008017570485116114.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230409-01_hu49c2ebc5630faacb0670ab507da41f6c_7998938_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230409-01_hu8376528471738402148.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230409-01_hu49c2ebc5630faacb0670ab507da41f6c_7998938_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230409-01_hu4837145464986947432.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230409-01_hu49c2ebc5630faacb0670ab507da41f6c_7998938_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230409-01_hu17030880002167272687.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230409-01_hu49c2ebc5630faacb0670ab507da41f6c_7998938_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230409-01_hu14205918386715971236.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Τζακ Κέρουακ"
             width="1346"
@@ -1994,7 +2085,10 @@
       
     </li>
   </ul>
-  <p class="mb-6">‘’Οι μόνοι που αξίζουν για μένα είναι οι τρελοί, αυτοί που τρελαίνονται να ζήσουν, να μιλήσουν, να σωθούν, που ποθούν τα πάντα την ίδια στιγμή, αυτοί που ποτέ δεν χασμουριούνται ή δεν λένε κοινότοπα πράγματα, αλλά που καίγονται, καίγονται σαν τα μυθικά κίτρινα ρωμαϊκά κεριά .</p>
+  <p class="mb-6"><p>‘’Οι μόνοι που αξίζουν για μένα είναι οι τρελοί, αυτοί που τρελαίνονται να ζήσουν, να μιλήσουν, να σωθούν, που ποθούν τα
+πάντα την ίδια στιγμή, αυτοί που ποτέ δεν χασμουριούνται ή δεν λένε κοινότοπα πράγματα, αλλά που καίγονται, καίγονται
+σαν τα μυθικά κίτρινα ρωμαϊκά κεριά .’’
+Τζακ Κέρουακ – Στο δρόμο</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230409/">
     Περισσότερα
   </a>
@@ -2031,6 +2125,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -2081,27 +2179,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230407-01_hu9eaac244910a47ffac35c2dc27032cd4_489893_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230407-01_hu9273700292925513765.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230407-01_hu9eaac244910a47ffac35c2dc27032cd4_489893_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230407-01_hu1330771995848366171.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230407-01_hu9eaac244910a47ffac35c2dc27032cd4_489893_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230407-01_hu6533609424824080496.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230407-01_hu9eaac244910a47ffac35c2dc27032cd4_489893_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230407-01_hu17412404100505900035.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230407-01_hu9eaac244910a47ffac35c2dc27032cd4_489893_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230407-01_hu2629229784719699064.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Παύλος Καρρέρ"
             width="571"
@@ -2136,7 +2234,10 @@
       
     </li>
   </ul>
-  <p class="mb-6">Ο Παύλος Καρρέρ γεννήθηκε στη Ζάκυνθο στις 12 Μαΐου του 1829. Χαρακτηρίστηκε ως ο πρώτος Έλληνας «εθνικός» μουσουργός. Ήταν γόνος αριστοκρατικής οικογένειας και σύζυγός του ήταν η Ισαβέλλα Ιατρά, υψίφωνος, η οποία ήταν και πρωταγωνίστρια των έργων του.</p>
+  <p class="mb-6"><p>Ο Παύλος Καρρέρ γεννήθηκε στη Ζάκυνθο στις 12 Μαΐου του 1829.
+Χαρακτηρίστηκε ως ο πρώτος Έλληνας «εθνικός» μουσουργός. Ήταν γόνος αριστοκρατικής οικογένειας και σύζυγός του ήταν η
+Ισαβέλλα Ιατρά, υψίφωνος, η οποία ήταν και πρωταγωνίστρια των έργων του.
+Το 1848 μετακόμιζει στην Κέρκυρα, όπου λέγεται ότι σπούδασε δίπλα στο Νικόλαο Χαλικιόπουλο Μάντζαρο.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230407/">
     Περισσότερα
   </a>
@@ -2173,6 +2274,10 @@
 
 
 
+
+
+
+
   
 
 
@@ -2223,27 +2328,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20230324-01_hu23f8927a0705724fcf18acfe55534b6b_1001664_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230324-01_hu2027312254981306117.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20230324-01_hu23f8927a0705724fcf18acfe55534b6b_1001664_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230324-01_hu9681176691293459471.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20230324-01_hu23f8927a0705724fcf18acfe55534b6b_1001664_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230324-01_hu18170655788693009957.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20230324-01_hu23f8927a0705724fcf18acfe55534b6b_1001664_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230324-01_hu13417832802421194247.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20230324-01_hu23f8927a0705724fcf18acfe55534b6b_1001664_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230324-01_hu1342375905983571883.png"
             class=" mb-6 w-full rounded blog-list-image img"
             alt="Μπέρτολτ Μπρεχτ &lt;Κουράστηκες&gt;"
             width="600"
@@ -2278,9 +2383,9 @@
       
     </li>
   </ul>
-  <p class="mb-6">Ακούμε: δε θέλεις πια να δουλέψεις μαζί μας.
-Γονάτισες, δε μπορείς άλλο να τρέχεις.
-Κουράστηκες, δε μπορείς πια να μαθαίνεις καινούργια.</p>
+  <p class="mb-6"><p>Ακούμε: δε θέλεις πια να δουλέψεις μαζί μας.</p>
+<p>Γονάτισες, δε μπορείς άλλο να τρέχεις.</p>
+<p>Κουράστηκες, δε μπορείς πια να μαθαίνεις καινούργια.</p></p>
   <a class="btn btn-outline-primary btn-sm" href="/blog/20230324/">
     Περισσότερα
   </a>
@@ -2367,9 +2472,9 @@
       class="img"
       width="70"
       height="auto"
-      src="/images/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_q90_h2_lanczos_3.webp"
+      src="/images/antama_black_mermugkia_hu11997741204530923746.webp"
       alt="Antama Collective"
-      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_lanczos_3.png'" />
+      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu15565378283504272735.png'" />
   
   
 
@@ -2451,7 +2556,7 @@
   <div class="border-border  border-t py-7">
     <div class="text-light  container text-center">
       <p>
-        Antama Collective 2023
+        Antama Collective
       </p>
     </div>
   </div>
@@ -2508,8 +2613,8 @@
 
 <script
   crossorigin="anonymous"
-  integrity="sha256-dKQRhBVpyVKBgty&#43;wfJcM7wTGpnzvIn9VZZIvCtAuGQ="
-  src="/js/script.min.74a411841569c9528182dcbec1f25c33bc131a99f3bc89fd559648bc2b40b864.js"></script>
+  integrity="sha256-B7oKPXi1trhn8eDc6T3qlY6Dth8XseImBjY9nYua0hE="
+  src="/js/script.min.07ba0a3d78b5b6b867f1e0dce93dea958e83b61f17b1e22606363d9d8b9ad211.js"></script>
 
 
 

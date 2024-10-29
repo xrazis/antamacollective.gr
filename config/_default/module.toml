@@ -48,9 +48,6 @@ path = "github.com/gethugothemes/hugo-modules/gallery-slider"
 path = "github.com/gethugothemes/hugo-modules/components/preloader"
 
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/components/social-share"
-
-[[imports]]
 path = "github.com/gethugothemes/hugo-modules/components/cookie-consent"
 
 [[imports]]

@@ -30,11 +30,11 @@
 
 
 
-<link rel="shortcut icon" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_16x0_resize_lanczos_3.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_32x0_resize_lanczos_3.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_hu82f0cb7745fbaa806c0b4900d3399f4d_149407_180x0_resize_lanczos_3.png">
+<link rel="shortcut icon" href="/images/favicon_hu7424989048623988921.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu7424989048623988921.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu5893180584025630723.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu7424989048623988921.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu8390472157669192516.png">
 
 
 
@@ -75,7 +75,14 @@
 
 
 
-<meta name="generator" content="Hugo 0.128.0">
+
+
+
+
+  
+
+
+<title>Αντάμωση με τις Μελισσιώτισες</title>
 
 
 
@@ -90,23 +97,21 @@
 
 
 
-  <meta name="keywords" content="Antama Collective, Blog" />
+
+  <meta
+    name="keywords"
+    content="Antama Collective, Blog" />
 
 
 
 
-<meta name="description" content="Website for the Antama Collective located in Zakynthos" />
+<meta
+  name="description"
+  content="Website for the Antama Collective located in Zakynthos" />
 
 
 
   <meta name="author" content="Antama Collective" />
-
-
-
-
-
-  
-  
 
 
 
@@ -156,16 +161,22 @@
       
         <meta property="og:image" content="/images/blog/20231220-01.jpg" />
         <meta name="twitter:image" content="/images/blog/20231220-01.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:card"
+          content="summary_large_image" />
       
       
       <meta property="og:image:width" content="4080" />
       <meta property="og:image:height" content="2288" />
     
 
+
     
-    <meta property="og:image:type" content="image/.jpg" />
+    <meta
+      property="og:image:type"
+      content="image/.jpg" />
   
+
 
   
 
@@ -184,6 +195,8 @@
 
 
 
+  <meta name="twitter:creator" content="@Antama Collective" />
+
 
 
 
@@ -196,8 +209,8 @@
 <script>
   let indexURL = "/searchindex.json";
   let includeSectionsInSearch = ["blog"];
-  let no_results_for = "0 results for";
-  let empty_search_results_placeholder = "";
+  let search_no_results = "0 results for";
+  let search_initial_message = "";
 </script>
 
 
@@ -268,8 +281,8 @@
 
 
 <link
-  href="/css/style.min.f2abe538d4e8d23d156967d5f816d3ef78ab53d58b9be38f816d1e826c50152f.css"
-  integrity="sha256-8qvlONTo0j0VaWfV+BbT73irU9WLm+OPgW0egmxQFS8="
+  href="/css/style.min.15542b6549cdaf16c7a6e2e3e46839170123651fea04610b03224367e7125ea2.css"
+  integrity="sha256-FVQrZUnNrxbHpuLj5Gg5FwEjZR/qBGELAyJDZ+cSXqI="
   rel="stylesheet" />
 
   </head>
@@ -355,9 +368,9 @@
       class="img"
       width="70"
       height="auto"
-      src="/images/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_q90_h2_lanczos_3.webp"
+      src="/images/antama_black_mermugkia_hu11997741204530923746.webp"
       alt="Antama Collective"
-      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_lanczos_3.png'" />
+      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu15565378283504272735.png'" />
   
   
 
@@ -458,16 +471,17 @@
 
   
     <div
-      class="search-wrapper search-modal "
-      data-image="true"
-      data-description="true"
-      data-tags="true"
-      data-categories="true"
-      tabindex="-1"
+      class="search-modal "
       aria-hidden="true"
       style="--color-primary: #121212">
-      <div class="search-wrapper-content">
-        <div class="search-input-body">
+      <div data-target="close-search-modal" class="search-modal-overlay"></div>
+      <div
+        class="search-wrapper"
+        data-image="true"
+        data-description="true"
+        data-tags="true"
+        data-categories="true">
+        <div class="search-wrapper-header">
           <label for="search-modal-input" style="margin-top:-1px">
             <span class="sr-only">search icon</span>
             <svg
@@ -515,7 +529,6 @@
                 width="14"
                 height="14"
                 fill="currentColor"
-                style="margin-top:-2px;"
                 viewBox="0 0 16 16">
                 <path
                   d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z" />
@@ -562,6 +575,7 @@
 
 
 
+
     <main>
       
   <section class="section pt-7">
@@ -572,6 +586,10 @@
           
             <div class="mb-10">
               
+
+
+
+
 
 
 
@@ -646,27 +664,27 @@
         <picture>
           <source
             
-              srcset="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_545x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20231220-01_hu742777112265742891.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_600x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20231220-01_hu7359574048778949713.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_700x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20231220-01_hu3973416785773094701.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_1110x0_resize_q90_h2_lanczos.webp"
+              srcset="/images/blog/20231220-01_hu10973998196295935668.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20231220-01_huc516fb185e6133aa3ad1a85cb9b9d4bc_607779_1110x0_resize_q90_lanczos.jpg"
+              src="/images/blog/20231220-01_hu1497824340858554688.jpg"
             class=" w-full rounded img"
             alt="Αντάμωση με τις Μελισσιώτισες"
             width="4080"
@@ -733,6 +751,8 @@
 
 
 
+
+
   
   <div
     class=" gallery 
@@ -754,6 +774,7 @@
 
 
 
+
   
   
     
@@ -771,19 +792,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -798,7 +825,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -807,11 +835,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/IMG_20231216_100830_317_hu112cbc59fd574bbbdfc7c282d00d639c_365212_400x400_fit_q90_h2_lanczos_2.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/IMG_20231216_100830_317_hu2347522083436760280.webp"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/IMG_20231216_100830_317.webp"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_100830_317_hu112cbc59fd574bbbdfc7c282d00d639c_365212_400x400_fit_q90_h2_lanczos_2.webp'" />
+                alt="IMG_20231216_100830_317.webp"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_100830_317_hu2347522083436760280.webp'" />
             </a>
           
         </div>
@@ -832,6 +861,7 @@
 
 
 
+
   
   
     
@@ -849,19 +879,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -876,7 +912,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -885,11 +922,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/20231216_101830_hu34d927b79c27e6ee4b36219e7fb55035_1038230_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/20231216_101830_hu14891539655801191175.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/20231216_101830.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/20231216_101830_hu34d927b79c27e6ee4b36219e7fb55035_1038230_400x400_fit_q90_lanczos.jpg'" />
+                alt="20231216_101830.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/20231216_101830_hu14891539655801191175.jpg'" />
             </a>
           
         </div>
@@ -910,6 +948,7 @@
 
 
 
+
   
   
     
@@ -927,19 +966,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -954,7 +999,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -963,11 +1009,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/20231216_105451_hu487d9652edd43938b2d0c0be1c2d0755_1068007_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/20231216_105451_hu17643105796013574348.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/20231216_105451.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/20231216_105451_hu487d9652edd43938b2d0c0be1c2d0755_1068007_400x400_fit_q90_lanczos.jpg'" />
+                alt="20231216_105451.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/20231216_105451_hu17643105796013574348.jpg'" />
             </a>
           
         </div>
@@ -988,6 +1035,7 @@
 
 
 
+
   
   
     
@@ -1005,19 +1053,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -1032,7 +1086,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -1041,11 +1096,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/IMG_20231216_113629_hu1ad1acf79c0ad259d13cc63037422b11_494166_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/IMG_20231216_113629_hu11918659422023536632.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/IMG_20231216_113629.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_113629_hu1ad1acf79c0ad259d13cc63037422b11_494166_400x400_fit_q90_lanczos.jpg'" />
+                alt="IMG_20231216_113629.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_113629_hu11918659422023536632.jpg'" />
             </a>
           
         </div>
@@ -1066,6 +1122,7 @@
 
 
 
+
   
   
     
@@ -1083,19 +1140,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -1110,7 +1173,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -1119,11 +1183,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/IMG_20231216_115810_hu9400461f0e1203bff45e53f8e2a56fcd_305209_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/IMG_20231216_115810_hu8297091736170575941.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/IMG_20231216_115810.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_115810_hu9400461f0e1203bff45e53f8e2a56fcd_305209_400x400_fit_q90_lanczos.jpg'" />
+                alt="IMG_20231216_115810.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_115810_hu8297091736170575941.jpg'" />
             </a>
           
         </div>
@@ -1144,6 +1209,7 @@
 
 
 
+
   
   
     
@@ -1161,19 +1227,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -1188,7 +1260,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -1197,11 +1270,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/IMG_20231216_121307_hu94c6863d69cb0bfd24f79f77fd289052_248925_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/IMG_20231216_121307_hu3767340155130879693.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/IMG_20231216_121307.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_121307_hu94c6863d69cb0bfd24f79f77fd289052_248925_400x400_fit_q90_lanczos.jpg'" />
+                alt="IMG_20231216_121307.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_121307_hu3767340155130879693.jpg'" />
             </a>
           
         </div>
@@ -1222,6 +1296,7 @@
 
 
 
+
   
   
     
@@ -1239,19 +1314,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -1266,7 +1347,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -1275,11 +1357,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/IMG_20231216_121322_hu133311d30cef723884fa4dfa5e355b63_330792_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/IMG_20231216_121322_hu7405775804953081105.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/IMG_20231216_121322.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_121322_hu133311d30cef723884fa4dfa5e355b63_330792_400x400_fit_q90_lanczos.jpg'" />
+                alt="IMG_20231216_121322.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_121322_hu7405775804953081105.jpg'" />
             </a>
           
         </div>
@@ -1300,6 +1383,7 @@
 
 
 
+
   
   
     
@@ -1317,19 +1401,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -1344,7 +1434,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -1353,11 +1444,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/IMG_20231216_121352_huac3eb45d8c22c537e7be4570c718e768_437005_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/IMG_20231216_121352_hu5274963283985538022.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/IMG_20231216_121352.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_121352_huac3eb45d8c22c537e7be4570c718e768_437005_400x400_fit_q90_lanczos.jpg'" />
+                alt="IMG_20231216_121352.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_121352_hu5274963283985538022.jpg'" />
             </a>
           
         </div>
@@ -1378,6 +1470,7 @@
 
 
 
+
   
   
     
@@ -1395,19 +1488,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -1422,7 +1521,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -1431,11 +1531,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/IMG_20231216_122209_hue2ddf95869653dc17369b1ef3fedfddf_742257_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/IMG_20231216_122209_hu2710180268433318464.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/IMG_20231216_122209.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_122209_hue2ddf95869653dc17369b1ef3fedfddf_742257_400x400_fit_q90_lanczos.jpg'" />
+                alt="IMG_20231216_122209.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_122209_hu2710180268433318464.jpg'" />
             </a>
           
         </div>
@@ -1456,6 +1557,7 @@
 
 
 
+
   
   
     
@@ -1473,19 +1575,25 @@
     
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+
+    
     
     
       
-    
-
-
-    
-
-    
-    
-    
-    
       
+        
+        
       
       
     
@@ -1500,7 +1608,8 @@
 
         
         
-
+        
+        
 
         <div class="gallery-item">
           
@@ -1509,11 +1618,12 @@
               style="display: block;"
               class="glightbox">
               <img
-                src="/images/gallery/melissiotises/IMG_20231216_125519_hu654ef4a444c7d93dd24e79d7b1810366_288723_400x400_fit_q90_h2_lanczos.webp"
+                loading="lazy"
+                src="/images/gallery/melissiotises/IMG_20231216_125519_hu2148994532293108840.jpg"
                 class="img"
                 style="margin: 0;"
-                alt="/images/gallery/melissiotises/IMG_20231216_125519.jpg"
-                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_125519_hu654ef4a444c7d93dd24e79d7b1810366_288723_400x400_fit_q90_lanczos.jpg'" />
+                alt="IMG_20231216_125519.jpg"
+                onerror="this.onerror='null';this.src='\/images\/gallery\/melissiotises\/IMG_20231216_125519_hu2148994532293108840.jpg'" />
             </a>
           
         </div>
@@ -1523,7 +1633,6 @@
   </div>
 
   
-
 
 <p>Οι φωτογραφίες είναι ενδεικτικές της σύμπραξης μας με τις Μελισσιώτισσες.</p>
 
@@ -1544,107 +1653,7 @@
                 
               </ul>
             </div>
-            <div class="lg:col-4 flex items-center">
-              
-
-
-
-
-
-
-
-
-
-
-
-<div class="share-icons">
-  <h5 class="share-title">share :</h5>
-
-
-  
-  
-    <a
-      class="share-link share-facebook"
-      href="https://facebook.com/sharer/sharer.php?u=%25%21s%28%3cnil%3e%29"
-      target="_blank"
-      rel="noopener"
-      aria-label="share facebook">
-      <span class="share-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
-        </svg>
-      </span>
-    </a>
-  
-
-
-  
-  
-    <a
-      class="share-link share-twitter"
-      href="https://twitter.com/intent/tweet/?text=share&amp;url=%25%21s%28%3cnil%3e%29"
-      target="_blank"
-      rel="noopener"
-      aria-label="share twitter">
-      <span aria-hidden="true" class="share-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
-        </svg>
-      </span>
-    </a>
-  
-
-
-  
-  
-    <a
-      class="share-link share-email"
-      href="mailto:?subject=share&amp;body=%25%21s%28%3cnil%3e%29"
-      target="_self"
-      rel="noopener"
-      aria-label="share email">
-      <span aria-hidden="true" class="share-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
-        </svg>
-      </span>
-    </a>
-  
-
-
-  
-  
-    <a
-      class="share-link share-reddit"
-      href="https://reddit.com/submit/?url=%25%21s%28%3cnil%3e%29&amp;resubmit=true&amp;title=share"
-      target="_blank"
-      rel="noopener"
-      aria-label="share reddit">
-      <span aria-hidden="true" class="share-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z" />
-        </svg>
-      </span>
-    </a>
-  
-
-
-  
-  
-
-
-  
-  
-</div>
-
-            </div>
           </div>
-          
-          
         </article>
       </div>
 
@@ -1685,144 +1694,6 @@
 
 
 
-  
-
-
-
-
-
-  
-
-  
-  
-    
-      
-    
-
-
-    
-    
-
-
-    
-    
-      
-      
-    
-    
-    
-
-
-    
-    
-      
-      
-        
-
-        
-        
-        
-        
-        
-        
-        
-
-
-        
-        
-
-
-        <picture>
-          <source
-            
-              srcset="/images/blog/20231228-01_hu3e46ff9e6210ea6d1163d39e920ed6af_1105205_545x0_resize_q90_h2_lanczos_3.webp"
-            
-            media="(max-width: 575px)" />
-          <source
-            
-              srcset="/images/blog/20231228-01_hu3e46ff9e6210ea6d1163d39e920ed6af_1105205_600x0_resize_q90_h2_lanczos_3.webp"
-            
-            media="(max-width: 767px)" />
-          <source
-            
-              srcset="/images/blog/20231228-01_hu3e46ff9e6210ea6d1163d39e920ed6af_1105205_700x0_resize_q90_h2_lanczos_3.webp"
-            
-            media="(max-width: 991px)" />
-          <source
-            
-              srcset="/images/blog/20231228-01_hu3e46ff9e6210ea6d1163d39e920ed6af_1105205_1110x0_resize_q90_h2_lanczos_3.webp"
-             />
-          <img
-            
-              loading="lazy" decoding="async"
-              src="/images/blog/20231228-01_hu3e46ff9e6210ea6d1163d39e920ed6af_1105205_1110x0_resize_lanczos_3.png"
-            class=" mb-6 w-full rounded blog-list-image img"
-            alt="Η παράνοια της αναζήτησης σπιτιού στην Ελλάδα."
-            width="960"
-            height="541" />
-        </picture>
-      
-      
-    
-    
-  
-
-
-  
-
-
-  
-  <h4 class="mb-3">
-    <a href="/blog/20231228/">
-      Η παράνοια της αναζήτησης σπιτιού στην Ελλάδα.
-    </a>
-  </h4>
-  <ul class="mb-4">
-    <li class="mr-4 inline-block">
-      <i class="fa-regular fa-folder mr-2"></i>
-      
-      
-        <a
-          class="ms-1"
-          href="/categories/%ce%ba%ce%bf%ce%b9%ce%bd%cf%89%ce%bd%ce%b9%ce%ba%ce%ac/"
-          >Κοινωνικά
-        </a>
-      
-    </li>
-  </ul>
-  <p class="mb-6">Το 2019 ο Έλληνας καλλιτέχνης Τhe Krank που διαμένει στο Βερολίνο ξεκίνησε ένα πρότζεκτ το οποίο είχε να κάνει με τη δυσκολία των κατοίκων των πόλεων να βρουν σπίτι.</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/20231228/">
-    Περισσότερα
-  </a>
-</div>
-
-              </div>
-            
-              <div class="lg:col-4 mb-8">
-                <div class="bg-body ">
-  
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1877,31 +1748,31 @@
         <picture>
           <source
             
-              srcset="/images/blog/20240131-01_hufd47e81e80dc012f2d769add98b91e9c_433857_545x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230602-01_hu6319468503084049174.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/blog/20240131-01_hufd47e81e80dc012f2d769add98b91e9c_433857_600x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230602-01_hu16662051437881664598.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/blog/20240131-01_hufd47e81e80dc012f2d769add98b91e9c_433857_700x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230602-01_hu18063912576207113908.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/blog/20240131-01_hufd47e81e80dc012f2d769add98b91e9c_433857_1110x0_resize_q90_h2_lanczos_3.webp"
+              srcset="/images/blog/20230602-01_hu9191580264726286910.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/blog/20240131-01_hufd47e81e80dc012f2d769add98b91e9c_433857_1110x0_resize_lanczos_3.png"
+              src="/images/blog/20230602-01_hu5613730467142007229.png"
             class=" mb-6 w-full rounded blog-list-image img"
-            alt="Οι Αγρότες της Ευρώπης στους Δρόμους."
-            width="720"
-            height="440" />
+            alt="«Χαμογέλα, ρε... τι σου ζητάνε;»"
+            width="1080"
+            height="608" />
         </picture>
       
       
@@ -1915,150 +1786,8 @@
 
   
   <h4 class="mb-3">
-    <a href="/blog/20240131/">
-      Οι Αγρότες της Ευρώπης στους Δρόμους.
-    </a>
-  </h4>
-  <ul class="mb-4">
-    <li class="mr-4 inline-block">
-      <i class="fa-regular fa-folder mr-2"></i>
-      
-      
-        <a
-          class="ms-1"
-          href="/categories/%ce%ba%ce%bf%ce%b9%ce%bd%cf%89%ce%bd%ce%b9%ce%ba%ce%ac/"
-          >Κοινωνικά
-        </a>
-      
-    </li>
-  </ul>
-  <p class="mb-6">Το τελευταίο διάστημα οι αγρότες σε πολλές ευρωπαικές χώρες βρίσκονται σε ρυθμούς κινητοποιήσεων και διεκδικήσεων ενάντια στη νέα αγροτική πολιτική που ψηφίστηκε στο ευρωκοινοβούλιο .</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/20240131/">
-    Περισσότερα
-  </a>
-</div>
-
-              </div>
-            
-              <div class="lg:col-4 mb-8">
-                <div class="bg-body ">
-  
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-  
-    
-      
-    
-
-
-    
-    
-
-
-    
-    
-      
-      
-    
-    
-    
-
-
-    
-    
-      
-      
-        
-
-        
-        
-        
-        
-        
-        
-        
-
-
-        
-        
-
-
-        <picture>
-          <source
-            
-              srcset="/images/blog/20230721-01_huaed11d34e166d904c12a438b3a2d25c5_1306726_545x0_resize_q90_h2_lanczos_3.webp"
-            
-            media="(max-width: 575px)" />
-          <source
-            
-              srcset="/images/blog/20230721-01_huaed11d34e166d904c12a438b3a2d25c5_1306726_600x0_resize_q90_h2_lanczos_3.webp"
-            
-            media="(max-width: 767px)" />
-          <source
-            
-              srcset="/images/blog/20230721-01_huaed11d34e166d904c12a438b3a2d25c5_1306726_700x0_resize_q90_h2_lanczos_3.webp"
-            
-            media="(max-width: 991px)" />
-          <source
-            
-              srcset="/images/blog/20230721-01_huaed11d34e166d904c12a438b3a2d25c5_1306726_1110x0_resize_q90_h2_lanczos_3.webp"
-             />
-          <img
-            
-              loading="lazy" decoding="async"
-              src="/images/blog/20230721-01_huaed11d34e166d904c12a438b3a2d25c5_1306726_1110x0_resize_lanczos_3.png"
-            class=" mb-6 w-full rounded blog-list-image img"
-            alt="Άμετρη η τέχνη μου και άμα σου.."
-            width="626"
-            height="895" />
-        </picture>
-      
-      
-    
-    
-  
-
-
-  
-
-
-  
-  <h4 class="mb-3">
-    <a href="/blog/20230721/">
-      Άμετρη η τέχνη μου και άμα σου..
+    <a href="/blog/20230531/">
+      «Χαμογέλα, ρε... τι σου ζητάνε;»
     </a>
   </h4>
   <ul class="mb-4">
@@ -2074,8 +1803,315 @@
       
     </li>
   </ul>
-  <p class="mb-6">Αν είσαι θεατρόφιλος είμαι σίγουρη ότι έχεις καταλάβει περί τίνος πρόκειται τούτω δω το κείμενο. Έβγαλαν όλοι το κεντρί τους και βάλθηκαν κατά ορίων στην τέχνη, μέτρου, σεβασμού και όλα αυτά τα σπουδαία.</p>
-  <a class="btn btn-outline-primary btn-sm" href="/blog/20230721/">
+  <p class="mb-6"><p>[&hellip;] &ldquo;Η ζωή μας μια φορά μας δίνεται, άπαξ, που λένε, σα μια μοναδική ευκαιρία. Τουλάχιστον μ’ αυτή την αυτόνομη μορφή
+της δεν πρόκειται να ξανα-υπάρξουμε ποτέ. Και μείς τι την κάνουμε ρε, αντί να τη ζήσουμε; Τι την κάνουμε; Τη σέρνουμε
+από δω κι από κει δολοφονώντας την.</p></p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/20230531/">
+    Περισσότερα
+  </a>
+</div>
+
+              </div>
+            
+              <div class="lg:col-4 mb-8">
+                <div class="bg-body ">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/blog/20240124-01_hu6188333761902739995.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/blog/20240124-01_hu18125179488339543254.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/blog/20240124-01_hu6210983987862149129.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/blog/20240124-01_hu10216956737658697821.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/blog/20240124-01_hu3240568811383879710.png"
+            class=" mb-6 w-full rounded blog-list-image img"
+            alt="ΟΧΙ ΣΤΑ ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ!"
+            width="1280"
+            height="720" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/20240124/">
+      ΟΧΙ ΣΤΑ ΙΔΙΩΤΙΚΑ ΠΑΝΕΠΙΣΤΗΜΙΑ!
+    </a>
+  </h4>
+  <ul class="mb-4">
+    <li class="mr-4 inline-block">
+      <i class="fa-regular fa-folder mr-2"></i>
+      
+      
+        <a
+          class="ms-1"
+          href="/categories/%ce%ba%ce%bf%ce%b9%ce%bd%cf%89%ce%bd%ce%b9%ce%ba%ce%ac/"
+          >Κοινωνικά
+        </a>
+      
+    </li>
+  </ul>
+  <p class="mb-6"><p>Σύμφωνα με το άρθρο 16 του Ελληνικού Συντάγματος, μοναδικός φορέας που δύναται να παρέχει τριτοβάθμια εκπαίδευση είναι
+το δημόσιο και μόνο αυτό. Στο συγκεκριμένο άρθρο αναφέρεται ότι η τέχνη και η επιστήμη, η έρευνα και η διδασκαλία είναι
+ελεύθερες· η ανάπτυξη και η προαγωγή τους αποτελεί υποχρέωση του Κράτους. Η ακαδημαϊκή ελευθερία και η ελευθερία της
+διδασκαλίας δεν απαλλάσσουν από το καθήκον της υπακοής στο Σύνταγμα όπως επίσης και ότι η ανώτατη εκπαίδευση παρέχεται
+αποκλειστικά από ιδρύματα που αποτελούν νομικά πρόσωπα δημοσίου δικαίου με πλήρη αυτοδιοίκηση. Τα ιδρύματα αυτά τελούν
+υπό την εποπτεία του Κράτους, έχουν δικαίωμα να ενισχύονται οικονομικά άπό αυτό και λειτουργούν σύμφωνα με τους νόμους
+που αφορούν τους οργανισμούς τους. Συγχώνευση ή κατάτμηση ανώτατων εκπαιδευτικών ιδρυμάτων μπορεί να γίνει και κατά
+παρέκκλιση από κάθε αντίθετη διάταξη, όπως νόμος ορίζει. Τα δε ιδρύματα, αποτελούν ελεύθερους χώρους έκφρασης, αλλά και
+μάθησης για όσους επιθυμούν να παρακολουθήσουν οποιοδήποτε πανεπιστημιακό μάθημα.</p></p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/20240124/">
+    Περισσότερα
+  </a>
+</div>
+
+              </div>
+            
+              <div class="lg:col-4 mb-8">
+                <div class="bg-body ">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/blog/20230703-01_hu16453953045172722002.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/blog/20230703-01_hu14218236134429708986.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/blog/20230703-01_hu13139927226516913476.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/blog/20230703-01_hu6655891425613198852.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/blog/20230703-01_hu8809381322288450660.png"
+            class=" mb-6 w-full rounded blog-list-image img"
+            alt="Μέδουσες του Αρκτικού Ωκεανού"
+            width="2012"
+            height="1524" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/20230703/">
+      Μέδουσες του Αρκτικού Ωκεανού
+    </a>
+  </h4>
+  <ul class="mb-4">
+    <li class="mr-4 inline-block">
+      <i class="fa-regular fa-folder mr-2"></i>
+      
+      
+        <a
+          class="ms-1"
+          href="/categories/%cf%80%ce%b5%cf%81%ce%b9%ce%b2%ce%ac%ce%bb%ce%bb%ce%bf%ce%bd/"
+          >Περιβάλλον
+        </a>
+      
+    </li>
+  </ul>
+  <p class="mb-6"><p>Οι μέδουσες είναι θαλάσσια ασπόνδυλα (κνιδόζωα) της τάξης σκυφόζωα.
+Πρόκειται για πλαγκτονικούς οργανισμούς, οι οποίοι απαντώνται σε όλες τις θάλασσες του κόσμου. Αντιπροσωπεύουν το
+κυρίαρχο στάδιο του βιολογικού κύκλου των κοιλεντερωτών, υδρόζωων (υδρομέδουσες, που έχουν ένα κράσπεδο το οποίο
+περιβάλλει την κοιλότητα που σχηματίζεται κάτω από την ομπρέλα τους) και σκυφόζωων (που δεν έχουν κράσπεδο,
+σκυφομέδουσες). Ζουν σε ομάδες και το τσίμπημα τους προκαλεί κνησμό και παράλυση της λείας τους. Τρέφονται με μικρά
+ψάρια και ζωοπλαγκτόν, τα οποία συλλαμβάνουν με τα πλοκάμια τους.</p></p>
+  <a class="btn btn-outline-primary btn-sm" href="/blog/20230703/">
     Περισσότερα
   </a>
 </div>
@@ -2161,9 +2197,9 @@
       class="img"
       width="70"
       height="auto"
-      src="/images/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_q90_h2_lanczos_3.webp"
+      src="/images/antama_black_mermugkia_hu11997741204530923746.webp"
       alt="Antama Collective"
-      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu02b7ee7a7c1ee75e39aa63339a74c13c_22940_140x0_resize_lanczos_3.png'" />
+      onerror="this.onerror=null;this.src='\/images\/antama_black_mermugkia_hu15565378283504272735.png'" />
   
   
 
@@ -2245,7 +2281,7 @@
   <div class="border-border  border-t py-7">
     <div class="text-light  container text-center">
       <p>
-        Antama Collective 2023
+        Antama Collective
       </p>
     </div>
   </div>
@@ -2302,8 +2338,8 @@
 
 <script
   crossorigin="anonymous"
-  integrity="sha256-dKQRhBVpyVKBgty&#43;wfJcM7wTGpnzvIn9VZZIvCtAuGQ="
-  src="/js/script.min.74a411841569c9528182dcbec1f25c33bc131a99f3bc89fd559648bc2b40b864.js"></script>
+  integrity="sha256-B7oKPXi1trhn8eDc6T3qlY6Dth8XseImBjY9nYua0hE="
+  src="/js/script.min.07ba0a3d78b5b6b867f1e0dce93dea958e83b61f17b1e22606363d9d8b9ad211.js"></script>
 
 
 

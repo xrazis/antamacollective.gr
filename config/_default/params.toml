@@ -23,7 +23,7 @@ contact_form_action = "https://form-endpoint.razis.com/send-email"
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "Antama Collective 2023"
+copyright = "Antama Collective"
 
 # Preloader
 [preloader]
