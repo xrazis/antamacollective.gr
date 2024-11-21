@@ -14,4 +14,3 @@ hugo_stats.json
 hugo_stats_decoded.json
 go.sum
 yarn.lock
-/public
