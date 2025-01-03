@@ -8,13 +8,16 @@ theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Europe/Athens"
 # post pagination
-paginate = 10 # see https://gohugo.io/extras/pagination/
+
 # post excerpt
 summaryLength = 20 # see https://gohugo.io/content-management/excerpts/
 # disable language
 disableLanguages = ["en"] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
 hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 defaultContentLanguage = "el"
+
+[pagination]
+pagerSize = 10
 
 ########################## Permalinks ############################
 [permalinks.page]
