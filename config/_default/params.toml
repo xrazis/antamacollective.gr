@@ -43,7 +43,7 @@ primary_color = "#121212"
 include_sections = ["blog"]
 show_image = true
 show_description = true
-show_tags = true
+show_tags = false
 show_categories = true
 
 # seo meta data for OpenGraph / Twitter Card
@@ -70,7 +70,7 @@ button = "I Accept"
 
 ######################## sidebar widgets #########################
 [widgets]
-sidebar = ["categories", "tags"]
+sidebar = ["categories"]
 
 # google map
 [google_map]
