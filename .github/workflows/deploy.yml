@@ -43,7 +43,7 @@ jobs:
 
       - name: Deploy
         run: |
-          sudo apt-get install -y tailscale rsync
+          curl -fsSL https://tailscale.com/install.sh | sh
           sudo tailscaled --state=mem: --tun=userspace-networking --socks5-server=localhost:1055 >/dev/null 2>&1 &
           sudo tailscale up --authkey=${{ secrets.TS_AUTHKEY }} --hostname=github-deploy --accept-routes
           rsync -az --delete -e "ssh -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
