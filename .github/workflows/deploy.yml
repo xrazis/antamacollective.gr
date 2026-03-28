@@ -44,13 +44,8 @@ jobs:
       - name: Deploy
         run: |
           wget https://pkgs.tailscale.com/stable/tailscale_1.96.4_amd64.tgz -P /tmp
-          sudo tar xzf /tmp/tailscale_1.96.4_amd64.tgz -C /usr/local/bin --strip-components=1
+          tar xzf /tmp/tailscale_1.96.4_amd64.tgz -C /usr/local/bin --strip-components=1
           rm /tmp/tailscale_1.96.4_amd64.tgz
-          sudo mkdir -p /var/run/tailscale
-          sudo apt-get install -y iptables
-          sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
-          sudo tailscaled --state="mem:" &
-          sudo tailscale up --authkey=${{ secrets.TS_AUTHKEY }} --hostname=github-deploy --accept-routes
-          tailscale status
-          sleep 10
-          rsync -az --delete -e "ssh -v -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
+          tailscaled --state=mem: --tun=userspace-networking --socks5-server=localhost:1055 >/dev/null 2>&1 &
+          tailscale up --authkey=${{ secrets.TS_AUTHKEY }} --hostname=github-deploy --accept-routes
+          rsync -az --delete -e "ssh -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
