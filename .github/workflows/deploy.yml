@@ -52,4 +52,5 @@ jobs:
           sudo tailscaled --state="mem:" &
           sudo tailscale up --authkey=${{ secrets.TS_AUTHKEY }} --hostname=github-deploy --accept-routes
           tailscale status
-          rsync -az --delete -e "ssh -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
+          sleep 10
+          rsync -az --delete -e "ssh -v -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
