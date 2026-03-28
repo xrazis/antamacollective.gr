@@ -12,7 +12,7 @@ So we believe that the time has come to join forces and co-shape our society.
 # Contact
 
 - Email: info@antamacollective.gr
-- Website: https//www.antamacollective.gr
+- Website: https://www.antamacollective.gr
 - Facebook: https://www.facebook.com/antamacollective
 - Instagram: https://www.instagram.com/antama_collective
 
@@ -33,9 +33,9 @@ meta_title: ""
 description: ""
 date: 2024-03-15
 image: "/images/blog/20240315-01.png"
-categories: [ "Κοινωνικά" ]
+categories: ["Κοινωνικά"]
 author: "Antama"
-tags: [ "" ]
+tags: [""]
 draft: false
 ---
 ```
@@ -54,10 +54,6 @@ To view the site locally:
 hugo server
 ```
 
-Visit `http://localhost:1313` to preview. When ready to deploy, run:
+Visit `http://localhost:1313` to preview.
 
-```bash
-hugo
-```
-
-This generates the static site in the `public/` directory. Push the changes to the remote repository to deploy.
+Deployment is automated via GitHub Actions on every push to `main`.
