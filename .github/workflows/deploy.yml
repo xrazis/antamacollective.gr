@@ -41,11 +41,10 @@ jobs:
           echo "Pages built:"
           find public/ -name '*.html' | wc -l
 
+      - name: Tailscale
+        uses: tailscale/github-action@v4
+        with:
+          authkey: ${{ secrets.TS_AUTHKEY }}
+
       - name: Deploy
-        run: |
-          wget https://pkgs.tailscale.com/stable/tailscale_1.96.4_amd64.tgz -P /tmp
-          tar xzf /tmp/tailscale_1.96.4_amd64.tgz -C /usr/local/bin --strip-components=1
-          rm /tmp/tailscale_1.96.4_amd64.tgz
-          tailscaled --state=mem: --tun=userspace-networking --socket=/tmp/tailscale.sock >/dev/null 2>&1 &
-          tailscale --socket=/tmp/tailscale.sock up --authkey=${{ secrets.TS_AUTHKEY }} --hostname=github-deploy --accept-routes
-          rsync -az --delete -e "ssh -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
+        run: rsync -az --delete -e "ssh -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
