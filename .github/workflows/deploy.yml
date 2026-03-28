@@ -46,7 +46,7 @@ jobs:
           wget https://pkgs.tailscale.com/stable/tailscale_1.96.4_amd64.tgz -P /tmp
           sudo tar xzf /tmp/tailscale_1.96.4_amd64.tgz -C /usr/local/bin --strip-components=1
           rm /tmp/tailscale_1.96.4_amd64.tgz
-          mkdir -p /var/run/tailscale
+          sudo mkdir -p /var/run/tailscale
           sudo apt-get install -y iptables
           sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
           sudo tailscaled --state="mem:" &
