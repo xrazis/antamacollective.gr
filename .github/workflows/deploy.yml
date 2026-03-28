@@ -1,0 +1,49 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build site
+        run: hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic
+        env:
+          HUGO_ENVIRONMENT: production
+
+      - name: Verify build
+        run: |
+          echo "Build complete"
+          echo "Size:"
+          du -sh public/
+          echo "Pages built:"
+          find public/ -name '*.html' | wc -l
+
+      - name: Deploy
+        run: |
+          sudo apt-get install -y tailscale rsync
+          sudo tailscaled --state=mem: --tun=userspace-networking --socks5-server=localhost:1055 >/dev/null 2>&1 &
+          sudo tailscale up --authkey=${{ secrets.TS_AUTHKEY }} --hostname=github-deploy --accept-routes
+          rsync -az --delete -e "ssh -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
