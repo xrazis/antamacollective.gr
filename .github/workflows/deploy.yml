@@ -45,6 +45,7 @@ jobs:
         uses: tailscale/github-action@v4
         with:
           authkey: ${{ secrets.TS_AUTHKEY }}
+          ping: ${{ secrets.DEPLOY_HOST }}
 
       - name: Deploy
         run: rsync -az --delete -e "ssh -o StrictHostKeyChecking=no" public/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
